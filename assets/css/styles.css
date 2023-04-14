@@ -243,3 +243,21 @@ div#navbarNav.collapse.navbar-collapse{
 /*=====================================*/
 /*===========END INDEX PAGE=========*/
 /*===================================*/
+
+
+/*=====================================*/
+/*==========Start Location PAGE========*/
+/*===================================*/
+#location_main_area .container-fluid{
+    margin-top: 30px;
+    padding: 20px;
+}
+#location_main_area .container-fluid .tabs-wrapper{
+    padding: 30px;
+}
+#location_main_area .container-fluid .tabs-wrapper .nav-tabs{
+    width: 100%;
+}
+/*=====================================*/
+/*==========End Location PAGE ========*/
+/*===================================*/
