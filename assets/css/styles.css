@@ -1,0 +1,238 @@
+:root{
+    --primary-color: #4B0D17;
+    --primary-color2: #ffffff;
+    --primary-color3: #000000;
+    --primary-color3-transparent: rgba(0, 0, 0, 0.6);
+    --primary-color-transparent: rgba(74, 13, 23, 0.3);
+    
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+/*start navigation*/
+#header_area div.main-menu{
+    background-color: black;
+    height: 80px;
+    position: relative;
+}
+#header_area .main-menu .navbar-brand {
+    padding: 0 1rem 0 1rem;
+    font-size: 30px;
+    color: var(--primary-color2);
+    font-weight: bold;
+    margin: 0;
+}
+#header_area .main-menu .navbar-brand img {
+    width: 125px;
+    height: 60px;
+    margin-right: 2px;
+}
+#header_area .main-menu .navbar{
+    padding: 0.3rem 0.3rem;
+    background-color: var(--primary-color);
+    min-height: 80px;
+    height: 100px;
+    width: 80vw;
+    max-height: 120px;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    border-radius: 10px;
+    margin-bottom:-100px;
+    z-index: 10;
+}
+#header_area .main-menu .navbar form.form-inline{
+    width: 200px;
+}
+div#navbarNav.collapse.navbar-collapse{
+     padding-left: 10px;
+}
+#header_area .main-menu .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: var(--primary-color2);
+    transition: color 0.30s ease-out;
+}
+#header_area .main-menu .navbar .navbar-collapse .navbar-nav .nav-item{
+      margin: 0 2px;
+      transition: background-color 0.30s ease-in;
+      border-radius: 5px;
+}
+#header_area .main-menu .navbar .navbar-collapse .navbar-nav .nav-item:hover{
+    background-color: var(--primary-color2);
+}
+#header_area .main-menu .navbar .navbar-collapse .navbar-nav .nav-item:hover .nav-link {
+    color: var(--primary-color);
+}
+#header_area .main-menu .navbar form .input-group label .fa-solid{
+    color: var(--primary-color2);
+    margin-right: 3px;
+}
+#header_area .main-menu .navbar form.form-inline div.input-group select.form-control{
+     margin-left: 5px;
+}
+#header_area .main-menu .navbar form.form-inline div.input-group select.form-select{
+    padding: 0 10px;
+    border:none;
+    color: var(--primary-color2);
+    background-color: #ffffff20 ;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    transition-property: border;
+    transition-duration: 0.3s;
+}
+#header_area .main-menu .navbar form.form-inline div.input-group select.form-select:hover{
+    border: 2px solid var(--primary-color2);
+}
+
+/*End  navigation*/
+
+/* Start Main */
+#main_area #hero{
+    height : 100vh;
+    background-image: url(../images/img7.jpeg);
+    background-color: var(--primary-color-transparent);
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: top center;
+    background-blend-mode:overlay;
+    color: var(--primary-color2);
+   
+}
+
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container{
+      background-color: var(--primary-color3-transparent);
+      border-radius: 15px;
+}
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container > h1{
+    text-align: center;
+    padding-top: 10px;
+}
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form{
+      border: none!important;
+      background-color: rgba(0, 0, 0, 0)!important;
+}
+
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form a.btn-lg{
+       background-color: var(--primary-color);
+       border: 1px solid var(--primary-color2);
+       color: var(--primary-color2);
+       transition: all 1s ease-in;
+}
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form a.btn-lg:hover{
+      color: var(--primary-color);
+      background-color: var(--primary-color2);
+      border: 2px solid var(--primary-color);
+}
+
+#main_area #hero div.container div.row div.col-lg-6 > h1{
+     font-size: 40px;
+     word-spacing: 4px;
+}
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form select:hover,
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form input:hover{
+    transition: border 0.30s ease-in, box-shadow 0.30s ease-out;
+}
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form select:hover,
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form input:hover{
+     border: 1px solid var(--primary-color);
+     box-shadow: 2px 2px 2px var(--primary-color2);
+}
+    
+#main_area section#commentçamarche div.container{
+    padding: 40px 24px!important;
+}
+
+#main_area section#commentçamarche div.container h2{
+    font-size: 50px;
+    text-align: center;
+    color: var(--primary-color3);
+}
+
+#main_area section#commentçamarche div.container div.row div.col div.card div.d-flex{
+    padding: 40px!important;
+}
+#main_area section#commentçamarche div.container div.row div.col div.card div.d-flex p{
+    margin:0!important;
+    padding: 0!important;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+/* End Main */
+
+/* Start footer */
+#footer_area {
+    color: var(--primary-color2)
+}
+#footer_area div.container-fluid div.row-cols-1 div.col div.row div.logo-wrapper{
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#footer_area div.container-fluid div.row-cols-1 div.col div.row div.logo-wrapper img{
+    width : 125px;
+    height: 60px;
+}
+
+#footer_area div.container-fluid div.row-cols-1 div.first-col div.row .text-wrapper h2{
+      font-size:30px;
+}
+
+#footer_area div.container-fluid div.row-cols-1 div.first-col div.row .text-wrapper h2,
+#footer_area div.container-fluid div.row-cols-1 h2.foot-card-title{
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+#footer_area div.container-fluid div.row-cols-1 div.first-col div.row .text-wrapper p{
+    text-align: justify;
+}
+
+#footer_area div.container-fluid div.row-cols-1 .second-col,
+#footer_area div.container-fluid div.row-cols-1 .third-col{
+     padding:0 6rem;
+}
+#footer_area div.container-fluid div.row-cols-1 div.second-col div.foot-card-text p{
+      margin-bottom: 10px;
+}
+#footer_area div.container-fluid div.row-cols-1 div.second-col div.foot-card-text p:first-of-type{
+     margin-top: 10px;
+}
+#footer_area div.container-fluid div.row-cols-1 div.second-col div.foot-card-text p > i{
+      font-size: 20px;
+     
+}
+#footer_area div.container-fluid div.row-cols-1 div.second-col div.foot-card-text p .text{
+    margin-left: 10px;
+}
+#footer_area div.container-fluid div.row-cols-1 div.second-col div.foot-card-text p:last-of-type{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+}
+#footer_area div.container-fluid div.row-cols-1 div.second-col div.foot-card-text p .social-medi-icon i{
+     font-size: 40px;
+}
+#footer_area div.container-fluid div.row-cols-1 .third-col{
+    padding-left: 1rem!important;
+}
+#footer_area div.container-fluid div.row-cols-1 .third-col div.links p a{
+    text-decoration: none;
+    color: var(--primary-color2);
+}
+#footer_area div.container-fluid div.row-cols-1 div.second-col div.foot-card-text p .social-medi-icon i:hover,
+#footer_area div.container-fluid div.row-cols-1 .third-col div.links p a:hover{
+    color: var(--primary-color);
+    text-shadow: 2px 2px 15px var(--primary-color2);
+}
+
+#footer_area div.signature{
+    border-top: 1px solid var(--primary-color2);
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+#footer_area div.signature span.signature-text{
+    color: gray;
+    font-size: 15px;
+    font-style: italic;
+}
+/* End footer */

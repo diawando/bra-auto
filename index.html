@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bra Auto</title>
+    <!-- BOOSTRAP CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Date Time Picker-->
+    <link rel="stylesheet" href="assets/css/jquery.datetimepicker.css"/>
+
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main styles sheet-->
+    <link href="assets/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+  <!--========================= Start Header Area =========================-->
+  <header class="header_area" id="header_area">
+    <div class="main-menu">
+      <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/logo-sample.png" alt="logo">
+               Bra-Auto
+            </a>
+            <form class="form-inline d-flex">
+              <div class="input-group input-group-sm me-3">
+                <select class="form-control form-select" id="pays">
+                  <option><span class="countrycode">GN 🇬🇳</option>
+                  <option><span class="countrycode">SEN 🇸🇳</option>
+                  <option><span class="countrycode">LIB 🇱🇷</option>
+                  <option><span class="countrycode">CI 🇨🇮</option>
+                  <option><span class="countrycode">SL 🇸🇱</option>
+                  <option><span class="countrycode">MLI 🇲🇱</option>
+                </select>
+              </div>
+              <div class="input-group input-group-sm">
+                <label for="langue">
+                  <i class="fa-solid fa-language"></i>
+                </label>
+                <select class="form-control form-select" id="langue">
+                  <option>Fr</option>
+                  <option>En</option>
+                </select>
+              </div>
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Louer une voiture<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acheter une voiture</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Ajouter ma voiture</a>
+                    </li>
+                    <li class="nav-item connect-button">
+                       <a class="nav-link" href="#">Se connecter</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+  </header>
+  
+  <!--========================= End Header Area =========================-->
+
+  <!--######################### Start Main Area #########################-->
+  <main class="main_area" id="main_area">
+    <!---->
+    <section id="hero">
+        <div class="container col-xl-10 col-xxl-9 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+                <div class="col-md-10 mx-auto col-lg-6">
+                      <div class="hero-form-container">
+                          <h1 class="fw-bold lh-1">Reservez votre course!</h1>
+                          <form class="p-3 p-md-4 border rounded-3 bg-light">
+                                 <div class="input-group mb-3">
+                                      <select class="form-select" aria-label="Default select example">
+                                            <option selected>Lieu de prise en charge</option>
+                                            <option value="1">Conakry</option>
+                                            <option value="2">Coyah</option>
+                                            <option value="3">Dubreka</option>
+                                      </select>
+                                  </div>
+                                 <div class="checkbox mb-3">
+                                      <label>
+                                            <input type="checkbox" value="memeplace" id="memezone"> Je me deplace dans la même zone!
+                                      </label>
+                                 </div>
+                                 <div class="input-group mb-3" id="destination">
+                                        <select class="form-select" aria-label="Default select example">
+                                              <option selected>Destination</option>
+                                              <option value="1">Conakry</option>
+                                              <option value="2">Coyah</option>
+                                              <option value="3">Dubreka</option>
+                                        </select>
+                                 </div>
+
+                                 <div class="input-group mb-3">
+                                       <input type="text" class="form-control" id="datedepart" placeholder="Début de location" aria-label="Username" aria-describedby="basic-addon1">
+                                       <span class="input-group-text" id="basic-addon1"><i class="fa-sharp fa-solid fa-calendar-days"></i></span>
+                                       <input type="text" class="form-control" id="datedefin" placeholder="Fin de location" aria-label="Username" aria-describedby="basic-addon1">
+                                 </div>
+
+            
+   
+                                 <div class="checkbox mb-3">
+                                       <label>
+                                           <input type="checkbox" value="remember-me"> J'ai un chauffeur!
+                                       </label>
+                                 </div>
+                                <a href="location.html" class="w-100 btn btn-lg">Rechercher</a> 
+           
+                          </form>
+                      </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                     <h1 class="fw-bold lh-1 mb-3">Louer une voiture simplement et en toute tranquilité.</h1>
+                     <p class="col-lg-10 fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita perspiciatis temporibus quam cumque tempora, autem fuga nobis mollitia porro, dignissimos enim officiis, sit repellat nemo! Accusantium illo reiciendis nam ipsum odio minima.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  Section comment ça marche -->
+    <section id="commentçamarche">
+         <div class="container px-4 py-5" id="custom-cards">
+              <h2 class="pb-2 border-bottom">Comment ça marche ?</h2>
+
+               <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                  <div class="col">
+                      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+                          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                             <p class="pt-3 mt-3 mb-4 fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae atque sed est voluptatum eligendi iure excepturi molestiae amet architecto delectus dolores neque, officiis voluptas sint eveniet totam nisi quos quidem.</p>
+                          </div>
+                      </div>
+                  </div>
+
+                   <div class="col">
+                      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+                          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                             <p class="pt-3 mt-3 mb-4 fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, vitae magnam. Quo earum cum animi similique, odio unde quos pariatur, facere eveniet maiores sint ipsam quis blanditiis id sit consequatur?</p>
+                          </div>
+                      </div>
+                   </div>
+
+                  <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+                         <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                           <p class="pt-3 mt-3 mb-4 fw-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ab quaerat exercitationem quidem libero, aut et architecto, beatae aliquid rem distinctio earum! Vitae eligendi atque eveniet culpa earum. Assumenda, harum.</p>
+                         </div>
+                    </div>
+                  </div>
+               </div>
+         </div>
+    </section>
+  </main>
+  <!--######################### End Main Area   #########################-->
+  
+  <!--######################### Start Footer Area #########################-->
+  <footer class="footer mt-auto py-3 bg-dark" id="footer_area">
+    <div class="container-fluid mt-2">
+        <div class="row row-cols-1 row-cols-lg-3">
+               <div class="col first-col">
+                    <div class="row">
+                          <div class="col-sm-12 col-lg-4 col-md-5 logo-wrapper">
+                               <img src="assets/images/logo-sample.png" alt="logo">
+                          </div>
+                          <div class="col-sm-12 col-lg-8 col-md-7 text-wrapper">
+                                <h2 class="footer-title">A propos de Bra Auto</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sit quaerat quasi quis itaque. Tempora laboriosam saepe eius aliquam distinctio, nisi debitis atque, consequuntur impedit illum reprehenderit velit animi rem!</p>
+                          </div>
+                    </div>
+               </div>
+               <div class="col second-col">
+                     <div class="title-wrapper">
+                         <h2 class="foot-card-title">Nos coordonnées</h2>
+                     </div>
+                     <div class="foot-card-text">
+                        <p><i class="fa-solid fa-square-phone-flip"></i><span class="text tel">+224 600 000 000</span></p>
+                        <p><i class="fa-solid fa-envelope"></i><span class="text mail">contact@bra-auto.com</span></p>
+                        <p><i class="fa-sharp fa-solid fa-location-dot"></i><span class="text adresse">Guinée-Conakry</span></p>
+                        <p><span class="social-medi-icon"><i class="fa-brands fa-square-facebook"></i></span>
+                            <span class="social-medi-icon"><i class="fa-brands fa-square-twitter"></i></span>
+                            <span class="social-medi-icon"><i class="fa-brands fa-linkedin"></i></span>
+                            <span class="social-medi-icon"><i class="fa-brands fa-square-instagram"></i></span>
+                        </p>
+                     </div>
+               </div>
+               <div class="col third-col">
+                    <div class="title-wrapper">
+                      <h2 class="foot-card-title">Liens utiles</h2>
+                    </div>
+                    <div class="links foot-card-text ">
+                      <p><a href="#">Comment ça marche</a></p>
+                      <p><a href="#">Guide utilisateur</a></p>
+                      <p><a href="#">Conditions générales d'utilisation(CGU)</a></p>
+                    </div>
+
+               </div>
+        </div>
+    </div>
+    <div class="container signature">
+      <span class="signature-text">Copyright @2023 Bra Auto | Tout droit réservé.</span>
+    </div>
+  </footer>
+  <!--######################### End Footer Area   #########################-->
+
+
+    <!-- JQUERY CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/jquery.datetimepicker.full.min.js"></script>
+    <!-- BOOSTRAP SCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- CUSTOM JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
