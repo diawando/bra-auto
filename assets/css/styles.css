@@ -87,78 +87,6 @@ div#navbarNav.collapse.navbar-collapse{
 
 /*End  navigation*/
 
-/* Start Main */
-#main_area #hero{
-    height : 100vh;
-    background-image: url(../images/img7.jpeg);
-    background-color: var(--primary-color-transparent);
-    background-repeat: no-repeat;
-    background-size:100%;
-    background-position: top center;
-    background-blend-mode:overlay;
-    color: var(--primary-color2);
-   
-}
-
-#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container{
-      background-color: var(--primary-color3-transparent);
-      border-radius: 15px;
-}
-#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container > h1{
-    text-align: center;
-    padding-top: 10px;
-}
-#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form{
-      border: none!important;
-      background-color: rgba(0, 0, 0, 0)!important;
-}
-
-#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form a.btn-lg{
-       background-color: var(--primary-color);
-       border: 1px solid var(--primary-color2);
-       color: var(--primary-color2);
-       transition: all 1s ease-in;
-}
-#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form a.btn-lg:hover{
-      color: var(--primary-color);
-      background-color: var(--primary-color2);
-      border: 2px solid var(--primary-color);
-}
-
-#main_area #hero div.container div.row div.col-lg-6 > h1{
-     font-size: 40px;
-     word-spacing: 4px;
-}
-#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form select:hover,
-#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form input:hover{
-    transition: border 0.30s ease-in, box-shadow 0.30s ease-out;
-}
-#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form select:hover,
-#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form input:hover{
-     border: 1px solid var(--primary-color);
-     box-shadow: 2px 2px 2px var(--primary-color2);
-}
-    
-#main_area section#commentçamarche div.container{
-    padding: 40px 24px!important;
-}
-
-#main_area section#commentçamarche div.container h2{
-    font-size: 50px;
-    text-align: center;
-    color: var(--primary-color3);
-}
-
-#main_area section#commentçamarche div.container div.row div.col div.card div.d-flex{
-    padding: 40px!important;
-}
-#main_area section#commentçamarche div.container div.row div.col div.card div.d-flex p{
-    margin:0!important;
-    padding: 0!important;
-    text-align: justify;
-    line-height: 1.5rem;
-}
-/* End Main */
 
 /* Start footer */
 #footer_area {
@@ -236,3 +164,82 @@ div#navbarNav.collapse.navbar-collapse{
     font-style: italic;
 }
 /* End footer */
+
+/*=====================================*/
+/*===========START INDEX PAGE=========*/
+/*===================================*/
+/* Start Main */
+#main_area #hero{
+    height : 100vh;
+    background-image: url(../images/img7.jpeg);
+    background-color: var(--primary-color-transparent);
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: top center;
+    background-blend-mode:overlay;
+    color: var(--primary-color2);
+   
+}
+
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container{
+      background-color: var(--primary-color3-transparent);
+      border-radius: 15px;
+}
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container > h1{
+    text-align: center;
+    padding-top: 10px;
+}
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form{
+      border: none!important;
+      background-color: rgba(0, 0, 0, 0)!important;
+}
+
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form a.btn-lg{
+       background-color: var(--primary-color);
+       border: 1px solid var(--primary-color2);
+       color: var(--primary-color2);
+       transition: all 1s ease-in;
+}
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form a.btn-lg:hover{
+      color: var(--primary-color);
+      background-color: var(--primary-color2);
+      border: 2px solid var(--primary-color);
+}
+
+#main_area #hero div.container div.row div.col-lg-6 > h1{
+     font-size: 40px;
+     word-spacing: 4px;
+}
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form select:hover,
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form input:hover{
+    transition: border 0.30s ease-in, box-shadow 0.30s ease-out;
+}
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form select:hover,
+#main_area #hero div.container div.row  div.col-md-10 div.hero-form-container form input:hover{
+     border: 1px solid var(--primary-color);
+     box-shadow: 2px 2px 2px var(--primary-color2);
+}
+    
+#main_area section#commentçamarche div.container{
+    padding: 40px 24px!important;
+}
+
+#main_area section#commentçamarche div.container h2{
+    font-size: 50px;
+    text-align: center;
+    color: var(--primary-color3);
+}
+
+#main_area section#commentçamarche div.container div.row div.col div.card div.d-flex{
+    padding: 40px!important;
+}
+#main_area section#commentçamarche div.container div.row div.col div.card div.d-flex p{
+    margin:0!important;
+    padding: 0!important;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+/* End Main */
+/*=====================================*/
+/*===========END INDEX PAGE=========*/
+/*===================================*/
