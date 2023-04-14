@@ -79,9 +79,9 @@
                 <div class="col-md-10 mx-auto col-lg-6">
                       <div class="hero-form-container">
                           <h1 class="fw-bold lh-1">Reservez votre course!</h1>
-                          <form class="p-3 p-md-4 border rounded-3 bg-light">
+                          <form class="p-3 p-md-4 border rounded-3 bg-light" action="location.html">
                                  <div class="input-group mb-3">
-                                      <select class="form-select" aria-label="Default select example">
+                                      <select class="form-select" aria-label="Default select example" required>
                                             <option selected>Lieu de prise en charge</option>
                                             <option value="1">Conakry</option>
                                             <option value="2">Coyah</option>
@@ -94,7 +94,7 @@
                                       </label>
                                  </div>
                                  <div class="input-group mb-3" id="destination">
-                                        <select class="form-select" aria-label="Default select example">
+                                        <select class="form-select" aria-label="Default select example" required>
                                               <option selected>Destination</option>
                                               <option value="1">Conakry</option>
                                               <option value="2">Coyah</option>
@@ -103,9 +103,9 @@
                                  </div>
 
                                  <div class="input-group mb-3">
-                                       <input type="text" class="form-control" id="datedepart" placeholder="Début de location" aria-label="Username" aria-describedby="basic-addon1">
+                                       <input type="text" class="form-control" id="datedepart" placeholder="Début de location" aria-label="Username" aria-describedby="basic-addon1" required>
                                        <span class="input-group-text" id="basic-addon1"><i class="fa-sharp fa-solid fa-calendar-days"></i></span>
-                                       <input type="text" class="form-control" id="datedefin" placeholder="Fin de location" aria-label="Username" aria-describedby="basic-addon1">
+                                       <input type="text" class="form-control" id="datedefin" placeholder="Fin de location" aria-label="Username" aria-describedby="basic-addon1" required>
                                  </div>
 
             
@@ -115,7 +115,7 @@
                                            <input type="checkbox" value="remember-me"> J'ai un chauffeur!
                                        </label>
                                  </div>
-                                <a href="location.html" class="w-100 btn btn-lg">Rechercher</a> 
+                                <button type="submit" class="w-100 btn btn-lg">Rechercher</button> 
            
                           </form>
                       </div>
