@@ -27,3 +27,16 @@ checkbox.addEventListener('change', function() {
     destination.style.display = 'flex';
   }
 });
+
+
+// Recuperer la valeur du range button dans location details et l'afficher
+const rangeInput = document.getElementById('rangeInput');
+  const rangeValue = document.getElementById('rangeValue');
+  
+  // Afficher la valeur par défaut au chargement de la page
+  rangeValue.textContent = `${rangeInput.value} GNF`;
+
+  rangeInput.addEventListener('mouseup', () => {
+    const value = rangeInput.value;
+    rangeValue.textContent = `${value} GNF`;
+  });
