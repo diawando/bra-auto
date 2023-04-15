@@ -346,7 +346,8 @@ div#navbarNav.collapse.navbar-collapse{
        padding: 10px;
        border: 1px solid var(--primary-color);
        background-color: var(--primary-color2);
-       color: var(--primary-color)
+       color: var(--primary-color);
+       transition: background-color 0.5s ease-in, color 0.5s ease-out;
 }
 #location_main_area div.container-fluid section.tab-content div.tri-wrapper p{
        margin-top: 10px;
@@ -357,13 +358,12 @@ div#navbarNav.collapse.navbar-collapse{
 #location_main_area div.container-fluid section.tab-content div.tri-wrapper div.tri-btn-wrapper div.btn-group .btn:first-of-type{
     border-radius: 5px 0px 0px 5px;
 }
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-9 div.btn-group .btn:hover,
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-9 div.btn-group .btn.active{
+#location_main_area div.container-fluid section.tab-content div.row div.card-tri-listing div.btn-group .btn:hover,
+#location_main_area div.container-fluid section.tab-content div.row div.card-tri-listing div.btn-group .btn.active{
        background-color: var(--primary-color);
-       border: 1px solid var(--primary-color2);
        color: var(--primary-color2);
 }
-#location_main_area div.container-fluid section.tab-content div.row div.row div.col-md-9
+
 /*=====================================*/
 /*==========End Location PAGE ========*/
 /*===================================*/
