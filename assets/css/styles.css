@@ -258,7 +258,7 @@ div#navbarNav.collapse.navbar-collapse{
 #location_main_area .container-fluid .tabs-wrapper .nav-tabs{
     width: 100%;
 }
-#location_main_area .container-fluid .tab-content .tab-pane .hidden-wrapper{
+#location_main_area .container-fluid .tab-content .tab-pane .hidden-btn-wrapper{
     display: none;
 }
 /*=====================================*/

@@ -92,58 +92,153 @@
             <section class="tab-content">
                  <div class="tab-pane active" id="resulats">
                     <!--  button pour mobile -->
-                      <div class="row hidden-wrapper">
+                      <div class="row hidden-btn-wrapper">
                             <div class="col-12 hidden">
-                              <button type="button" class="btn btn-secondary">Filtre</button>
-                              <button type="button" class="btn btn-secondary">Tri</button>
+                              <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                              <label class="btn btn-secondary" for="option1">Filtre</label>
+                              
+                              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                              <label class="btn btn-secondary" for="option2">Tri</label>
                             </div>
                       </div>
                    <!-- fin button pour mobile -->
                       <div class="row">
                           <div class="col-md-3">
-                              <div class="trajet-wrapper">
-                                    <h3>Votre itineraire</h3>
-                                    <form class="p-3 p-md-4" action="location.html">
-                                      <div class="input-group mb-3">
-                                           <select class="form-select" aria-label="Default select example" disabled>
-                                                 <option selected>Lieu de prise en charge</option>
-                                                 <option value="1">Conakry</option>
-                                                 <option value="2">Coyah</option>
-                                                 <option value="3">Dubreka</option>
+                               <!-- Resume du trajet-->
+                               <div class="trajet-wrapper">
+                                      <h3>Votre itineraire</h3>
+                                      <form class="p-3 p-md-4 border">
+                                          <div class="input-group mb-3">
+                                               <select class="form-select" aria-label="Default select example" disabled>
+                                                     <option selected>Lieu de prise en charge</option>
+                                                     <option value="1">Conakry</option>
+                                                     <option value="2">Coyah</option>
+                                                     <option value="3">Dubreka</option>
+                                               </select>
+                                           </div>
+                                          <div class="checkbox mb-3">
+                                               <label>
+                                                     <input type="checkbox" value="memeplace" id="memezone" disabled> Je me deplace dans la même zone!
+                                               </label>
+                                          </div>
+                                          <div class="input-group mb-3" id="destination">
+                                                 <select class="form-select" aria-label="Default select example" disabled>
+                                                       <option selected>Destination</option>
+                                                       <option value="1">Conakry</option>
+                                                       <option value="2">Coyah</option>
+                                                       <option value="3">Dubreka</option>
+                                                 </select>
+                                          </div>
+                                        
+                                          <div class="input-group mb-3">
+                                                <input type="text" class="form-control" id="datedepart" placeholder="Début de location" aria-label="Username" aria-describedby="basic-addon1" disabled>
+                                                <span class="input-group-text" id="basic-addon1"><i class="fa-sharp fa-solid fa-calendar-days"></i></span>
+                                                <input type="text" class="form-control" id="datedefin" placeholder="Fin de location" aria-label="Username" aria-describedby="basic-addon1" disabled>
+                                          </div>
+                                        
+                                        
+                                        
+                                          <div class="checkbox mb-3">
+                                                <label>
+                                                    <input type="checkbox" value="remember-me" disabled> J'ai un chauffeur!
+                                                </label>
+                                          </div>
+                                        <button type="submit" class="w-100 btn btn-lg">Modifier</button>         
+                                   </form>
+                               </div>
+                               <!-- fin Resume du trajet -->
+                               <div class="filtre-wrapper">
+                                   <form class="p-3 p-md-4 border">
+                                       <div class="form-group">
+                                           <label for="nombreplaces">Nombre de places</label>
+                                           <select class="form-select" aria-label="Nombre de places" id="nombreplaces">
+                                                <option>2 places</option>
+                                                <option>4 places</option>
+                                                <option>5 places</option>
+                                                <option>6 places</option>
+                                                <option>9 places</option>
                                            </select>
                                        </div>
-                                      <div class="checkbox mb-3">
-                                           <label>
-                                                 <input type="checkbox" value="memeplace" id="memezone" disabled> Je me deplace dans la même zone!
-                                           </label>
-                                      </div>
-                                      <div class="input-group mb-3" id="destination">
-                                             <select class="form-select" aria-label="Default select example" disabled>
-                                                   <option selected>Destination</option>
-                                                   <option value="1">Conakry</option>
-                                                   <option value="2">Coyah</option>
-                                                   <option value="3">Dubreka</option>
-                                             </select>
-                                      </div>
-     
-                                      <div class="input-group mb-3">
-                                            <input type="text" class="form-control" id="datedepart" placeholder="Début de location" aria-label="Username" aria-describedby="basic-addon1" disabled>
-                                            <span class="input-group-text" id="basic-addon1"><i class="fa-sharp fa-solid fa-calendar-days"></i></span>
-                                            <input type="text" class="form-control" id="datedefin" placeholder="Fin de location" aria-label="Username" aria-describedby="basic-addon1" disabled>
-                                      </div>
-     
-                 
-        
-                                      <div class="checkbox mb-3">
-                                            <label>
-                                                <input type="checkbox" value="remember-me" disabled> J'ai un chauffeur!
-                                            </label>
-                                      </div>
-                                     <button type="submit" class="w-100 btn btn-lg">Modifier</button> 
-                
-                               </form>
-                              </div>
-                            
+                                       <div class="form-group">
+                                           <label for="nombreportes">Nombre de portes</label>
+                                           <select class="form-select" aria-label="Nombre de portes" id="nombreportes">
+                                                <option>2 portes</option>
+                                                <option>3 portes</option>
+                                                <option>5 portes</option>
+                                           </select>
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="anneevoiture">Année du véhicule</label>
+                                           <select class="form-select" aria-label="Année du véhicule" id="anneevoiture">
+                                            <option> 2023 </option>
+                                            <option> 2022 </option>
+                                            <option> 2021 </option>
+                                            <option> 2020 </option>
+                                            <option> 2019 </option>
+                                            <option> 2018 </option>
+                                            <option> 2017 </option>
+                                            <option> 2016 </option>
+                                            <option> 2015 </option>
+                                            <option> 2014 </option>
+                                            <option> 2013 </option>
+                                            <option> 2012 </option>
+                                            <option> 2011 </option>
+                                            <option> 2010 </option>
+                                            <option> 2009 </option>
+                                            <option> 2008 </option>
+                                            <option> 2007 </option>
+                                            <option> 2006 </option>
+                                            <option> 2005 </option>
+                                            <option> 2004 </option>
+                                            <option> 2003 </option>
+                                            <option> 2002 </option>
+                                            <option> 2001 </option>
+                                            <option> 2000 </option>
+                                           </select>
+                                       </div>
+                                       <div class="form-group">
+                                            <label for="boitevitesse">Boite de vitesse</label>
+                                            <select class="form-select" aria-label="Boite de vitesse" id="boitevitesse">
+                                                <option>Manuelle</option>
+                                                <option>Automatique</option>
+                                            </select>
+                                       </div>
+                                       <div class="form-group">
+                                            <label for="moteur">Moteur</label>
+                                            <select class="form-select" aria-label="Nombre de portes" id="moteur">
+                                                <option>Diesel</option>
+                                                <option>Essence</option>
+                                            </select>
+                                       </div>
+                                       <div class="form-group">
+                                            <p class="check-title">Options</p>
+                                             <div class="form-check">
+                                                  <input class="form-check-input" type="checkbox" value="climatisation" id="climatisation">
+                                                  <label class="form-check-label" for="climatisation">
+                                                    Climatisation
+                                                  </label>
+                                             </div>
+                                             <div class="form-check">
+                                                   <input class="form-check-input" type="checkbox" value="gps" id="gps">
+                                                   <label class="form-check-label" for="gps">
+                                                         GPS
+                                                   </label>
+                                             </div>
+                                             <div class="form-check">
+                                                   <input class="form-check-input" type="checkbox" value="siegechauffant" id="sigechauffant">
+                                                   <label class="form-check-label" for="sigechauffant">
+                                                          Siège chauffant
+                                                   </label>
+                                             </div>
+                                             <div class="form-check">
+                                                   <input class="form-check-input" type="checkbox" value="siegeauto" id="siegeauto">
+                                                   <label class="form-check-label" for="siegeauto">
+                                                          Siège auto
+                                                   </label>
+                                             </div>
+                                       </div>
+                                   </form> 
+                               </div>
                           </div>
                           <div class="col-md-9">
 
