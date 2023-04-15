@@ -89,7 +89,7 @@
                   </li>
                 </ul>
             </div>
-            <section class="tab-content">
+            <section class="tab-content container-fluid">
                  <div class="tab-pane active" id="resulats">
                     <!--  button pour mobile -->
                       <div class="row hidden-btn-wrapper">
@@ -107,8 +107,8 @@
                                <!-- Resume du trajet-->
                                <div class="trajet-wrapper">
                                       <h3>Votre itineraire</h3>
-                                      <form class="p-3 p-md-4 border">
-                                          <div class="input-group mb-3">
+                                      <form class="p-3 p-md-4">
+                                          <div class="input-group mb-2">
                                                <select class="form-select" aria-label="Default select example" disabled>
                                                      <option selected>Lieu de prise en charge</option>
                                                      <option value="1">Conakry</option>
@@ -116,12 +116,12 @@
                                                      <option value="3">Dubreka</option>
                                                </select>
                                            </div>
-                                          <div class="checkbox mb-3">
+                                          <div class="checkbox mb-2">
                                                <label>
                                                      <input type="checkbox" value="memeplace" id="memezone" disabled> Je me deplace dans la même zone!
                                                </label>
                                           </div>
-                                          <div class="input-group mb-3" id="destination">
+                                          <div class="input-group mb-2" id="destination">
                                                  <select class="form-select" aria-label="Default select example" disabled>
                                                        <option selected>Destination</option>
                                                        <option value="1">Conakry</option>
@@ -130,15 +130,16 @@
                                                  </select>
                                           </div>
                                         
-                                          <div class="input-group mb-3">
-                                                <input type="text" class="form-control" id="datedepart" placeholder="Début de location" aria-label="Username" aria-describedby="basic-addon1" disabled>
+                                          <div class="input-group mb-2"> 
                                                 <span class="input-group-text" id="basic-addon1"><i class="fa-sharp fa-solid fa-calendar-days"></i></span>
+                                                <input type="text" class="form-control" id="datedepart" placeholder="Début de location" aria-label="Username" aria-describedby="basic-addon1" disabled>
+                                          </div>
+                                          <div class="input-group mb-2">
+                                                <span class="input-group-text" id="basic-addon2"><i class="fa-sharp fa-solid fa-calendar-days"></i></span>
                                                 <input type="text" class="form-control" id="datedefin" placeholder="Fin de location" aria-label="Username" aria-describedby="basic-addon1" disabled>
                                           </div>
-                                        
-                                        
-                                        
-                                          <div class="checkbox mb-3">
+                                      
+                                          <div class="checkbox mb-2">
                                                 <label>
                                                     <input type="checkbox" value="remember-me" disabled> J'ai un chauffeur!
                                                 </label>
@@ -148,7 +149,7 @@
                                </div>
                                <!-- fin Resume du trajet -->
                                <div class="filtre-wrapper">
-                                   <form class="p-3 p-md-4 border">
+                                   <form class="p-3 p-md-4">
                                        <div class="form-group">
                                            <label for="nombreplaces">Nombre de places</label>
                                            <select class="form-select" aria-label="Nombre de places" id="nombreplaces">

@@ -4,6 +4,9 @@
     --primary-color3: #000000;
     --primary-color3-transparent: rgba(0, 0, 0, 0.6);
     --primary-color-transparent: rgba(74, 13, 23, 0.3);
+    --title-background: #F4F6F6;
+    --container-background: #F1F1F1;
+    --border-color: #D5DBDB;
     
 }
 
@@ -251,15 +254,54 @@ div#navbarNav.collapse.navbar-collapse{
 #location_main_area .container-fluid{
     margin-top: 30px;
     padding: 20px;
+    background-color: var(--container-background);
 }
-#location_main_area .container-fluid .tabs-wrapper{
+#location_main_area .container-fluid .tabs-wrapper,
+#location_main_area .container-fluid .tab-content
+{
     padding: 30px;
 }
 #location_main_area .container-fluid .tabs-wrapper .nav-tabs{
     width: 100%;
 }
-#location_main_area .container-fluid .tab-content .tab-pane .hidden-btn-wrapper{
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.hidden-btn-wrapper{
     display: none;
+}
+#location_main_area div.container-fluid section.tab-content{
+    padding-top: 0!important;
+}
+
+#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .trajet-wrapper,
+#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .filtre-wrapper{
+    background-color: var(--primary-color2);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .trajet-wrapper h3{
+     font-size: 1.2rem;
+     text-align: center;
+     margin: 0;
+     padding: 10px 0;
+     background-color: var(--title-background);
+}
+#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .trajet-wrapper form{
+     border-top: var(--border-color);
+}
+#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .trajet-wrapper form div.checkbox label{
+     font-size: 14px;
+}
+
+#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .trajet-wrapper form button {
+    background-color: var(--primary-color);
+    color: var(--primary-color2);
+    border: 1px solid var(--primary-color2);
+    transition: background-color 0.5s ease-in, color 0.5s ease-out, border 0.5s ease-in-out ;
+}
+#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .trajet-wrapper form button:hover{
+    background-color: var(--primary-color2) ;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 /*=====================================*/
 /*==========End Location PAGE ========*/
