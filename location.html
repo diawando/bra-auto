@@ -107,7 +107,7 @@
                                <!-- Resume du trajet-->
                                <div class="trajet-wrapper">
                                       <h3>Aperçu de votre itineraire</h3>
-                                      <form class="p-3 p-md-4">
+                                      <form class="p-3 p-md-4" id="form-itineraire">
                                           <div class="input-group mb-2">
                                                <select class="form-select" aria-label="Default select example" disabled>
                                                      <option selected>Lieu de prise en charge</option>
@@ -118,7 +118,7 @@
                                            </div>
                                           <div class="checkbox mb-2">
                                                <label>
-                                                     <input type="checkbox" value="memeplace" id="memezone" disabled> Je me deplace dans la même zone!
+                                                     <input type="checkbox" value="memeplace" id="re-memezone" disabled> Je me deplace dans la même zone!
                                                </label>
                                           </div>
                                           <div class="input-group mb-2" id="destination">
@@ -144,7 +144,7 @@
                                                     <input type="checkbox" value="remember-me" disabled> J'ai un chauffeur!
                                                 </label>
                                           </div>
-                                        <button type="submit" class="w-100 btn btn-lg">Modifier</button>         
+                                        <button type="submit" class="w-100 btn btn-lg" id="modifier-btn">Modifier</button>         
                                    </form>
                                </div>
                                <!-- fin Resume du trajet -->

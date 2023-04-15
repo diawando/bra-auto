@@ -79,9 +79,9 @@
                 <div class="col-md-10 mx-auto col-lg-6">
                       <div class="hero-form-container">
                           <h1 class="fw-bold lh-1">Reservez votre course!</h1>
-                          <form class="p-3 p-md-4 border rounded-3 bg-light" action="location.html">
+                          <form class="p-3 p-md-4 border rounded-3 bg-light" action="location.html" method="POST">
                                  <div class="input-group mb-3">
-                                      <select class="form-select" aria-label="Default select example" required>
+                                      <select class="form-select" aria-label="Default select example" name="lieu-prise-en-charge" required>
                                             <option selected>Lieu de prise en charge</option>
                                             <option value="1">Conakry</option>
                                             <option value="2">Coyah</option>
@@ -90,11 +90,11 @@
                                   </div>
                                  <div class="checkbox mb-3">
                                       <label>
-                                            <input type="checkbox" value="memeplace" id="memezone"> Je me deplace dans la même zone!
+                                            <input type="checkbox" value="memeplace" id="memezone" name="memezone"> Je me deplace dans la même zone!
                                       </label>
                                  </div>
                                  <div class="input-group mb-3" id="destination">
-                                        <select class="form-select" aria-label="Default select example" required>
+                                        <select class="form-select" aria-label="Default select example" name="destination" required>
                                               <option selected>Destination</option>
                                               <option value="1">Conakry</option>
                                               <option value="2">Coyah</option>
@@ -103,16 +103,16 @@
                                  </div>
 
                                  <div class="input-group mb-3">
-                                       <input type="text" class="form-control" id="datedepart" placeholder="Début de location" aria-label="Username" aria-describedby="basic-addon1" required>
+                                       <input type="text" class="form-control" id="datedepart" name="datedepart" placeholder="Début de location" aria-label="Username" aria-describedby="basic-addon1" required>
                                        <span class="input-group-text" id="basic-addon1"><i class="fa-sharp fa-solid fa-calendar-days"></i></span>
-                                       <input type="text" class="form-control" id="datedefin" placeholder="Fin de location" aria-label="Username" aria-describedby="basic-addon1" required>
+                                       <input type="text" class="form-control" id="datedefin" name="datefin" placeholder="Fin de location" aria-label="Username" aria-describedby="basic-addon1" required>
                                  </div>
 
             
    
                                  <div class="checkbox mb-3">
                                        <label>
-                                           <input type="checkbox" value="remember-me"> J'ai un chauffeur!
+                                           <input type="checkbox" value="remember-me" name="a-un-chauffeur"> J'ai un chauffeur!
                                        </label>
                                  </div>
                                 <button type="submit" class="w-100 btn btn-lg">Rechercher</button> 
