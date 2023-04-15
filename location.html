@@ -151,7 +151,10 @@
                                <div class="filtre-wrapper">
                                    <form class="p-3 p-md-4">
                                        <div class="form-group">
-                                           <label for="nombreplaces">Nombre de places</label>
+                                           <label for="nombreplaces">
+                                            <i class="fa-solid fa-people-group"></i>
+                                            Nombre de places
+                                          </label>
                                            <select class="form-select" aria-label="Nombre de places" id="nombreplaces">
                                                 <option>2 places</option>
                                                 <option>4 places</option>
@@ -161,7 +164,10 @@
                                            </select>
                                        </div>
                                        <div class="form-group">
-                                           <label for="nombreportes">Nombre de portes</label>
+                                           <label for="nombreportes">
+                                            <i class="fa-sharp fa-solid fa-car-side"></i>
+                                            Nombre de portes
+                                          </label>
                                            <select class="form-select" aria-label="Nombre de portes" id="nombreportes">
                                                 <option>2 portes</option>
                                                 <option>3 portes</option>
@@ -169,7 +175,10 @@
                                            </select>
                                        </div>
                                        <div class="form-group">
-                                           <label for="anneevoiture">Année du véhicule</label>
+                                           <label for="anneevoiture">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            Année du véhicule
+                                          </label>
                                            <select class="form-select" aria-label="Année du véhicule" id="anneevoiture">
                                             <option> 2023 </option>
                                             <option> 2022 </option>
@@ -198,21 +207,30 @@
                                            </select>
                                        </div>
                                        <div class="form-group">
-                                            <label for="boitevitesse">Boite de vitesse</label>
+                                            <label for="boitevitesse">
+                                              <i class="fa-solid fa-gear"></i>
+                                              Boite de vitesse
+                                            </label>
                                             <select class="form-select" aria-label="Boite de vitesse" id="boitevitesse">
                                                 <option>Manuelle</option>
                                                 <option>Automatique</option>
                                             </select>
                                        </div>
                                        <div class="form-group">
-                                            <label for="moteur">Moteur</label>
+                                            <label for="moteur">
+                                              <i class="fa-solid fa-gas-pump"></i>
+                                              Moteur
+                                            </label>
                                             <select class="form-select" aria-label="Nombre de portes" id="moteur">
                                                 <option>Diesel</option>
                                                 <option>Essence</option>
                                             </select>
                                        </div>
                                        <div class="form-group">
-                                            <p class="check-title">Options</p>
+                                            <p class="check-title">
+                                              <i class="fa-sharp fa-solid fa-filter"></i>
+                                              Options
+                                            </p>
                                              <div class="form-check">
                                                   <input class="form-check-input" type="checkbox" value="climatisation" id="climatisation">
                                                   <label class="form-check-label" for="climatisation">
@@ -239,12 +257,18 @@
                                              </div>
                                        </div>
                                        <div class="form-group">
-                                        <label for="rangeInput" class="form-label mt-2">Sélectionnez une valeur :</label>
+                                        <label for="rangeInput" class="form-label mt-2">
+                                          <i class="fa-solid fa-money-check-dollar"></i>
+                                          Prix moyen :
+                                        </label>
                                         <div id="rangeValue"></div>
                                         <input type="range" class="form-range" id="rangeInput" min="700000" max="1500000">
                                       </div>
                                       <div class="form-group mb-3">
-                                        <label for="typevehicule">Type de véhicule</label>
+                                        <label for="typevehicule">
+                                          <i class="fa-solid fa-car"></i>
+                                          Type de véhicule
+                                        </label>
                                         <select class="form-select" aria-label="ype de véhicule" id="typevehicule">
                                              <option>Berline</option>
                                              <option>Pick up</option>
@@ -335,5 +359,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>
+    <script>
+                     // Recuperer la valeur du range button dans location details et l'afficher
+          const rangeInput = document.getElementById('rangeInput');
+          const rangeValue = document.getElementById('rangeValue');
+              
+            // Afficher la valeur par défaut au chargement de la page
+            rangeValue.textContent = `${rangeInput.value} GNF`;
+              
+            rangeInput.addEventListener('mouseup', () => {
+              const value = rangeInput.value;
+              rangeValue.textContent = `${value} GNF`;
+            });
+    </script>
   </body>
 </html>
