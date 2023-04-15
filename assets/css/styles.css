@@ -282,62 +282,88 @@ div#navbarNav.collapse.navbar-collapse{
     padding-top: 0!important;
 }
 
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .trajet-wrapper,
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .filtre-wrapper{
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper,
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper{
     background-color: var(--primary-color2);
     border: 1px solid var(--border-color);
     border-radius: 5px;
     margin-bottom: 15px;
 }
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .trajet-wrapper h3{
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper h3{
      font-size: 1.2rem;
      text-align: center;
      margin: 0;
      padding: 10px 0;
      background-color: var(--title-background);
 }
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .trajet-wrapper form{
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper form{
      border-top: var(--border-color);
 }
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .trajet-wrapper form div.checkbox label{
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper form div.checkbox label{
      font-size: 14px;
 }
 
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .trajet-wrapper form button,
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .filtre-wrapper form .btn-filtre button{
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper form button,
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .btn-filtre button{
     background-color: var(--primary-color);
     color: var(--primary-color2);
     border: 1px solid var(--primary-color2);
     transition: background-color 0.5s ease-in, color 0.5s ease-out, border 0.5s ease-in-out ;
 }
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .trajet-wrapper form button:hover,
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .filtre-wrapper form .btn-filtre button:hover{
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper form button:hover,
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .btn-filtre button:hover{
     background-color: var(--primary-color2) ;
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
 }
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .filtre-wrapper form .form-group{
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group{
           margin-bottom: 10px;
 }
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .filtre-wrapper form .form-group .check-title{
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group .check-title{
      margin-bottom: 0;
      margin-top: 10px!important;
 }
 
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .filtre-wrapper form .form-group label,
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .filtre-wrapper form .form-group .check-title
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group label,
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group .check-title
 {
      font-size: 15px;
      font-weight: bold;
      padding-left: 2px;
      margin-bottom: 3px;
 }
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .filtre-wrapper form .form-group label i,
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-3 .filtre-wrapper form .form-group .check-title i{
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group label i,
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group p.check-title i{
     font-size:20px;
     color: var(--primary-color);
     margin-right: 3px;
 }
+
+#location_main_area div.container-fluid section.tab-content div.row div.col-md-9 div.btn-group p.tri-btn-title{
+      font-weight: bold;
+}
+#location_main_area div.container-fluid section.tab-content div.row div.col-md-9 div.btn-group .btn{
+       padding: 10px;
+       border: 1px solid var(--primary-color);
+       background-color: var(--primary-color2);
+       color: var(--primary-color)
+}
+#location_main_area div.container-fluid section.tab-content div.tri-wrapper p{
+       margin-top: 10px;
+}
+#location_main_area div.container-fluid section.tab-content div.tri-wrapper .col-md-3 p span.nombrevoitre{
+      font-weight: bold;
+}
+#location_main_area div.container-fluid section.tab-content div.tri-wrapper div.tri-btn-wrapper div.btn-group .btn:first-of-type{
+    border-radius: 5px 0px 0px 5px;
+}
+#location_main_area div.container-fluid section.tab-content div.row div.col-md-9 div.btn-group .btn:hover,
+#location_main_area div.container-fluid section.tab-content div.row div.col-md-9 div.btn-group .btn.active{
+       background-color: var(--primary-color);
+       border: 1px solid var(--primary-color2);
+       color: var(--primary-color2);
+}
+#location_main_area div.container-fluid section.tab-content div.row div.row div.col-md-9
 /*=====================================*/
 /*==========End Location PAGE ========*/
 /*===================================*/
