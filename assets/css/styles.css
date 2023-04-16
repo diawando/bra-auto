@@ -288,6 +288,9 @@ div#navbarNav.collapse.navbar-collapse{
     border: 1px solid var(--border-color);
     border-radius: 5px;
     margin-bottom: 15px;
+    box-shadow: 2px 2px 40px var(--border-color),*
+                -2px -2px 30px var(--border-color)
+    ;
 }
 #location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper h3{
      font-size: 1.2rem;
@@ -308,13 +311,15 @@ div#navbarNav.collapse.navbar-collapse{
     background-color: var(--primary-color);
     color: var(--primary-color2);
     border: 1px solid var(--primary-color2);
-    transition: background-color 0.5s ease-in, color 0.5s ease-out, border 0.5s ease-in-out ;
+    transform: translate(0);
+    transition: background-color 0.5s ease-in, color 0.5s ease-out, border 0.5s ease-in-out, transform 0.5s ease-in;
 }
 #location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper form button:hover,
 #location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .btn-filtre button:hover{
     background-color: var(--primary-color2) ;
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+    transform: translate(-2px,-2px);
 }
 #location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group{
           margin-bottom: 10px;
@@ -339,30 +344,33 @@ div#navbarNav.collapse.navbar-collapse{
     margin-right: 3px;
 }
 
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-9 div.btn-group p.tri-btn-title{
+#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.tri-wrapper div.tri-btn-wrapper div.btn-group p.tri-btn-title{
       font-weight: bold;
 }
-#location_main_area div.container-fluid section.tab-content div.row div.col-md-9 div.btn-group .btn{
-       padding: 10px;
-       border: 1px solid var(--primary-color);
+#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.tri-wrapper div.tri-btn-wrapper div.btn-group .btn{
+       padding: 5px;
+       border-color: var(--primary-color3-transparent);
        background-color: var(--primary-color2);
        color: var(--primary-color);
        transition: background-color 0.5s ease-in, color 0.5s ease-out;
+       margin: 0;
+       height: 35px ;
 }
 #location_main_area div.container-fluid section.tab-content div.tri-wrapper p{
-       margin-top: 10px;
+       margin-top: 5px;
 }
-#location_main_area div.container-fluid section.tab-content div.tri-wrapper .col-md-3 p span.nombrevoitre{
+#location_main_area div.container-fluid section.tab-content div.tri-wrapper .cadre-nbre-voiture p span.nombrevoitre{
       font-weight: bold;
 }
-#location_main_area div.container-fluid section.tab-content div.tri-wrapper div.tri-btn-wrapper div.btn-group .btn:first-of-type{
+#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.tri-wrapper div.tri-btn-wrapper div.btn-group .btn:first-of-type{
     border-radius: 5px 0px 0px 5px;
 }
-#location_main_area div.container-fluid section.tab-content div.row div.card-tri-listing div.btn-group .btn:hover,
-#location_main_area div.container-fluid section.tab-content div.row div.card-tri-listing div.btn-group .btn.active{
+#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.tri-wrapper div.tri-btn-wrapper div.btn-group .btn.active{
        background-color: var(--primary-color);
        color: var(--primary-color2);
+       border-color: var(--border-color);
 }
+
 
 /*=====================================*/
 /*==========End Location PAGE ========*/

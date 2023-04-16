@@ -79,10 +79,10 @@
                     <a class="nav-link active" data-href="location.html#resultats">Resultat</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-href="conditions.html">Conditions</a>
+                    <a class="nav-link" data-href="conditions.html">Details</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-href="details.html">Details</a>
+                    <a class="nav-link" data-href="details.html">Conditions</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" data-href="login.html">Confirmation</a>
@@ -90,7 +90,7 @@
                 </ul>
             </div>
             <section class="tab-content container-fluid">
-                 <div class="tab-pane active" id="resulats">
+                 <div class="tab-pane t-pane-resultats active" id="resulats">
                     <!--  button pour mobile -->
                       <div class="row hidden-btn-wrapper">
                             <div class="col-12 hidden">
@@ -296,21 +296,29 @@
                                                 <button type="button" class="btn" data-filter=".note">Note</button>
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 cadre-nbre-voiture">
                                             <p><span class="nombrevoitre">10</span> voitures trouvées</p>
                                         </div>
                                   </div>
                                   <div class="carlist-wrapper">
                                     <div class="card mb-3">
                                       <div class="row g-0">
-                                        <div class="col-md-4">
-                                          <img src="..." class="img-fluid rounded-start" alt="...">
+                                        <div class="col-md-3">
+                                             <img src="..." class="img-fluid rounded-start" alt="...">
                                         </div>
-                                        <div class="col-md-8">
-                                          <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                        <div class="col-md-6">
+                                             <div class="card-body">
+                                               <h5 class="card-title">Card title</h5>
+                                               <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">An item</li>
+                                                <li class="list-group-item">A second item</li>
+                                                <li class="list-group-item">A third item</li>
+                                              </ul>
+                                             </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                          <div class="card-footer">
+                                               2 days ago
                                           </div>
                                         </div>
                                       </div>
@@ -322,9 +330,9 @@
 
 
                  </div>
-                 <div class="tab-pane" id="conditions"></div>
-                 <div class="tab-pane" id="details"></div>
-                 <div class="tab-pane" id="confirmation"></div>
+                 <div class="tab-pane t-pane-conditions" id="conditions"></div>
+                 <div class="tab-pane t-pane-details" id="details"></div>
+                 <div class="tab-pane t-pane-confirmation" id="confirmation"></div>
             </section>
 
         </div>
