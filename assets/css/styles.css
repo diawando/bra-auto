@@ -349,7 +349,9 @@ div#navbarNav.collapse.navbar-collapse{
 }
 #location_main_area div.t-pane-resultats div.row div.card-tri-listing div.tri-wrapper div.tri-btn-wrapper div.btn-group .btn{
        padding: 5px;
-       border-color: var(--primary-color3-transparent);
+       border-right-color: var(--primary-color3-transparent);
+       border-top-color: var(--primary-color3-transparent);
+       border-bottom-color: var(--primary-color3-transparent);
        background-color: var(--primary-color2);
        color: var(--primary-color);
        transition: background-color 0.5s ease-in, color 0.5s ease-out;
