@@ -383,6 +383,11 @@ div#navbarNav.collapse.navbar-collapse{
 #location_main_area div.t-pane-resultats div.row div.card-tri-listing div.carlist-wrapper div.card{
       width: 950px;
       max-width: 1000px;     
+      transition: transform 0.40s ease-in, box-shadow 0.30s ease;
+}
+#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.carlist-wrapper div.card:hover{
+       transform: translate(-5px, -5px);
+       box-shadow: 4px 4px 9px var(--primary-color3-transparent);
 }
 #location_main_area div.t-pane-resultats div.row div.card-tri-listing div.carlist-wrapper div.card div.row div.card-header {
        background-color: var(--primary-color3);
