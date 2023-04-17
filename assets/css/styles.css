@@ -418,6 +418,12 @@ div#navbarNav.collapse.navbar-collapse{
 #location_main_area div.carlist-wrapper div.card div.row div.col-md-3 div.card-footer div.prix p span.devise{
      font-size: 15px;
 }
+#location_main_area div.carlist-wrapper  div.pagination-wrapper {
+     margin-top: 16px;
+     display: flex;
+     justify-content: center;
+}
+
 /*=====================================*/
 /*==========End Location PAGE ========*/
 /*===================================*/
