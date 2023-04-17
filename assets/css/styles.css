@@ -7,6 +7,7 @@
     --title-background: #F4F6F6;
     --container-background: #F1F1F1;
     --border-color: #D5DBDB;
+    --note-color : #20D418;
     
 }
 
@@ -307,7 +308,8 @@ div#navbarNav.collapse.navbar-collapse{
 }
 
 #location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper form button,
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .btn-filtre button{
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .btn-filtre button,
+#location_main_area div.carlist-wrapper div.card div.row div.col-md-3 div.card-footer div.btn-louer .btn{
     background-color: var(--primary-color);
     color: var(--primary-color2);
     border: 1px solid var(--primary-color2);
@@ -315,7 +317,8 @@ div#navbarNav.collapse.navbar-collapse{
     transition: background-color 0.5s ease-in, color 0.5s ease-out, border 0.5s ease-in-out, transform 0.5s ease-in;
 }
 #location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper form button:hover,
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .btn-filtre button:hover{
+#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .btn-filtre button:hover,
+#location_main_area div.carlist-wrapper div.card div.row div.col-md-3 div.card-footer div.btn-louer .btn:hover{
     background-color: var(--primary-color2) ;
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
@@ -373,7 +376,48 @@ div#navbarNav.collapse.navbar-collapse{
        border-color: var(--border-color);
 }
 
+#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.carlist-wrapper{
+       padding: 30px;
+}
 
+#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.carlist-wrapper div.card{
+      width: 950px;
+      max-width: 1000px;     
+}
+#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.carlist-wrapper div.card div.row div.card-header {
+       background-color: var(--primary-color3);
+       border-bottom: none;
+       padding: 5px 16px;
+}
+#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.carlist-wrapper div.card div.row div.card-header h4.car-mark-name{
+      color: var(--primary-color2);
+}
+#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.carlist-wrapper div.card div.row div.col-md-3 img{
+      border-bottom-left-radius: 0.375rem;
+}
+#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.carlist-wrapper div.card div.row div.col-md-6 div.card-body h5.card-title{
+      margin: 5px 0;
+}
+#location_main_area div.carlist-wrapper div.card div.row div.col-md-6 div.card-body ul.list-group li.list-group-item p{
+     margin: 0;
+}
+#location_main_area div.carlist-wrapper div.card div.row div.col-md-6 div.card-body ul.list-group li.list-group-item:last-of-type p span.car-small-icone{
+    color: var(--note-color);
+}
+#location_main_area div.carlist-wrapper div.card div.row div.col-md-3 div.card-footer{
+      height: 100%;
+      padding: 40px;
+      background-color: var(--primary-color-transparent);
+}
+#location_main_area div.carlist-wrapper div.card div.row div.col-md-3 div.card-footer div.prix p span{
+     font-size: 18px;
+}
+#location_main_area div.carlist-wrapper div.card div.row div.col-md-3 div.card-footer div.prix p span.montant{
+     font-weight: bold;
+}
+#location_main_area div.carlist-wrapper div.card div.row div.col-md-3 div.card-footer div.prix p span.devise{
+     font-size: 15px;
+}
 /*=====================================*/
 /*==========End Location PAGE ========*/
 /*===================================*/
