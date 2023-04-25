@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 jQuery.datetimepicker.setLocale('en');
 jQuery('#datedepart').datetimepicker({
     timepicker:true,
@@ -13,24 +15,17 @@ jQuery('#datedefin').datetimepicker({
 });
 
 
+ $('.tri-wrapper .btn-group button').click(function () {
+    $(this).addClass('active').siblings().removeClass('active');
+    
+    var filterValue = $(this).attr('data-filter');
+    var filteredChildren = $('.grid').children(filterValue);
+    var numFilteredChildren = filteredChildren.length;
+    $('.grid').children().hide();
+    filteredChildren.show();
+    $('.num-filtered-children').text(numFilteredChildren);
+  });
 
-// Récupérer la case à cocher et l'élément à masquer
-const checkbox = document.getElementById('memezone');
-const destination = document.getElementById('destination');
-
-// Ajouter un écouteur d'événement pour la case à cocher
-checkbox.addEventListener('change', function() {
-  // Si la case est cochée, masquer l'élément de destination
-  if (checkbox.checked) {
-    destination.style.display = 'none';
-  } else{
-    destination.style.display = 'flex';
-  }
 });
-
-
-
-
-
 
   
