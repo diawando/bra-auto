@@ -260,10 +260,13 @@ div#navbarNav.collapse.navbar-collapse{
 #location_main_area .container-fluid .tabs-wrapper,
 #location_main_area .container-fluid .tab-content
 {
-    padding: 30px;
+    padding:30px;
 }
 #location_main_area .container-fluid .tabs-wrapper .nav-tabs{
     width: 100%;
+}
+#location_main_area .container-fluid .tabs-wrapper .nav-tabs .nav-item .nav-link{
+     pointer-events: none;
 }
 #location_main_area .container-fluid .tabs-wrapper .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
         color: var(--primary-color3);
@@ -276,15 +279,15 @@ div#navbarNav.collapse.navbar-collapse{
       background-color: var(--primary-color);
       border-color: var(--primary-color2);
 }
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.hidden-btn-wrapper{
+#location_main_area div.container-fluid div.tab-content div.tab-pane div.hidden-btn-wrapper{
     display: none;
 }
-#location_main_area div.container-fluid section.tab-content{
+#location_main_area div.container-fluid div.tab-content{
     padding-top: 0!important;
 }
 
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper,
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper{
+#location_main_area div.container-fluid div.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper,
+#location_main_area div.container-fluid div.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper{
     background-color: var(--primary-color2);
     border: 1px solid var(--border-color);
     border-radius: 5px;
@@ -293,64 +296,65 @@ div#navbarNav.collapse.navbar-collapse{
                 -2px -2px 30px var(--border-color)
     ;
 }
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper h3{
+#location_main_area div.container-fluid div.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper h3{
      font-size: 1.2rem;
      text-align: center;
      margin: 0;
      padding: 10px 0;
      background-color: var(--title-background);
 }
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper form{
+#location_main_area div.container-fluid div.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper form{
      border-top: var(--border-color);
 }
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper form div.checkbox label{
+#location_main_area div.container-fluid div.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper form div.checkbox label{
      font-size: 14px;
 }
 
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper form button,
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .btn-filtre button,
+#location_main_area div.container-fluid div.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper form button,
+#location_main_area div.container-fluid div.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .btn-filtre button,
 #location_main_area div.carlist-wrapper div.card div.row div.col-md-3 div.card-footer div.btn-louer .btn{
     background-color: var(--primary-color);
     color: var(--primary-color2);
     border: 1px solid var(--primary-color2);
     transform: translate(0);
     transition: background-color 0.5s ease-in, color 0.5s ease-out, border 0.5s ease-in-out, transform 0.5s ease-in;
+    padding: 10px;
 }
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper form button:hover,
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .btn-filtre button:hover,
+#location_main_area div.container-fluid div.tab-content div.tab-pane div.row aside.trajet .trajet-wrapper form button:hover,
+#location_main_area div.container-fluid div.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .btn-filtre button:hover,
 #location_main_area div.carlist-wrapper div.card div.row div.col-md-3 div.card-footer div.btn-louer .btn:hover{
     background-color: var(--primary-color2) ;
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
     transform: translate(-2px,-2px);
 }
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group{
+#location_main_area div.container-fluid div.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group{
           margin-bottom: 10px;
 }
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group .check-title{
+#location_main_area div.container-fluid div.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group .check-title{
      margin-bottom: 0;
      margin-top: 10px!important;
 }
 
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group label,
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group .check-title
+#location_main_area div.container-fluid div.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group label,
+#location_main_area div.container-fluid div.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group .check-title
 {
      font-size: 15px;
      font-weight: bold;
      padding-left: 2px;
      margin-bottom: 3px;
 }
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group label i,
-#location_main_area div.container-fluid section.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group p.check-title i{
+#location_main_area div.container-fluid div.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group label i,
+#location_main_area div.container-fluid div.tab-content div.tab-pane div.row aside.trajet .filtre-wrapper form .form-group p.check-title i{
     font-size:20px;
     color: var(--primary-color);
     margin-right: 3px;
 }
 
-#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.tri-wrapper div.tri-btn-wrapper div.btn-group p.tri-btn-title{
+#location_main_area  div.row div.card-tri-listing div.tri-wrapper div.tri-btn-wrapper div.btn-group p.tri-btn-title{
       font-weight: bold;
 }
-#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.tri-wrapper div.tri-btn-wrapper div.btn-group .btn{
+#location_main_area  div.row div.card-tri-listing div.tri-wrapper div.tri-btn-wrapper div.btn-group .btn{
        padding: 5px;
        border-right-color: var(--primary-color3-transparent);
        border-top-color: var(--primary-color3-transparent);
@@ -361,46 +365,47 @@ div#navbarNav.collapse.navbar-collapse{
        margin: 0;
        height: 35px ;
 }
-#location_main_area div.container-fluid section.tab-content div.tri-wrapper p{
+#location_main_area div.container-fluid div.tab-content div.tri-wrapper p{
        margin-top: 5px;
 }
-#location_main_area div.container-fluid section.tab-content div.tri-wrapper .cadre-nbre-voiture p span.nombrevoitre{
+#location_main_area div.container-fluid div.tab-content div.tri-wrapper .cadre-nbre-voiture p span.nombrevoitre{
       font-weight: bold;
 }
-#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.tri-wrapper div.tri-btn-wrapper div.btn-group .btn:first-of-type{
+#location_main_area  div.row div.card-tri-listing div.tri-wrapper div.tri-btn-wrapper div.btn-group .btn:first-of-type{
     border-radius: 5px 0px 0px 5px;
+    border-left-color: var(--primary-color);
 }
-#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.tri-wrapper div.tri-btn-wrapper div.btn-group .btn.active{
+#location_main_area  div.row div.card-tri-listing div.tri-wrapper div.tri-btn-wrapper div.btn-group .btn.active{
        background-color: var(--primary-color);
        color: var(--primary-color2);
        border-color: var(--border-color);
 }
 
-#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.carlist-wrapper{
+#location_main_area  div.row div.card-tri-listing div.carlist-wrapper{
        padding: 30px;
 }
 
-#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.carlist-wrapper div.card{
+#location_main_area  div.row div.card-tri-listing div.carlist-wrapper div.card{
       width: 950px;
       max-width: 1000px;     
       transition: transform 0.40s ease-in, box-shadow 0.30s ease;
 }
-#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.carlist-wrapper div.card:hover{
+#location_main_area  div.row div.card-tri-listing div.carlist-wrapper div.card:hover{
        transform: translate(-5px, -5px);
        box-shadow: 4px 4px 25px var(--primary-color3-transparent);
 }
-#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.carlist-wrapper div.card div.row div.card-header {
+#location_main_area  div.row div.card-tri-listing div.carlist-wrapper div.card div.row div.card-header {
        background-color: var(--primary-color3);
        border-bottom: none;
        padding: 5px 16px;
 }
-#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.carlist-wrapper div.card div.row div.card-header h4.car-mark-name{
+#location_main_area  div.row div.card-tri-listing div.carlist-wrapper div.card div.row div.card-header h4.car-mark-name{
       color: var(--primary-color2);
 }
-#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.carlist-wrapper div.card div.row div.col-md-3 img{
+#location_main_area  div.row div.card-tri-listing div.carlist-wrapper div.card div.row div.col-md-3 img{
       border-bottom-left-radius: 0.375rem;
 }
-#location_main_area div.t-pane-resultats div.row div.card-tri-listing div.carlist-wrapper div.card div.row div.col-md-6 div.card-body h5.card-title{
+#location_main_area  div.row div.card-tri-listing div.carlist-wrapper div.card div.row div.col-md-6 div.card-body h5.card-title{
       margin: 5px 0;
 }
 #location_main_area div.carlist-wrapper div.card div.row div.col-md-6 div.card-body ul.list-group li.list-group-item p{
@@ -428,6 +433,7 @@ div#navbarNav.collapse.navbar-collapse{
      display: flex;
      justify-content: center;
 }
+
 
 /*=====================================*/
 /*==========End Location PAGE ========*/
