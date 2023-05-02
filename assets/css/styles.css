@@ -253,8 +253,7 @@ div#navbarNav.collapse.navbar-collapse{
 /*==========Start Location PAGE========*/
 /*===================================*/
 #location_main_area .container-fluid{
-    margin-top: 30px;
-    padding: 20px;
+    padding: 80px 20px 20px 20px;
     background-color: var(--container-background);
 }
 #location_main_area .container-fluid .tabs-wrapper,
