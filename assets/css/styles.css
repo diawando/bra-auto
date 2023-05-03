@@ -7,7 +7,8 @@
     --title-background: #F4F6F6;
     --container-background: #F1F1F1;
     --border-color: #D5DBDB;
-    --note-color : #20D418;
+    --note-color : #198753;
+
     
 }
 
@@ -253,7 +254,8 @@ div#navbarNav.collapse.navbar-collapse{
 /*==========Start Location PAGE========*/
 /*===================================*/
 #location_main_area .container-fluid{
-    padding: 80px 20px 20px 20px;
+    margin-top: 30px;
+    padding: 20px;
     background-color: var(--container-background);
 }
 #location_main_area .container-fluid .tabs-wrapper,
@@ -381,12 +383,12 @@ div#navbarNav.collapse.navbar-collapse{
 }
 
 #location_main_area  div.row div.card-tri-listing div.carlist-wrapper{
-       padding: 30px 0px 30px 90px;
+       padding: 30px;
 }
 
 #location_main_area  div.row div.card-tri-listing div.carlist-wrapper div.card{
-      width: 100%!important;
-      max-width: 85%;     
+      width: 950px;
+      max-width: 1000px;     
       transition: transform 0.40s ease-in, box-shadow 0.30s ease;
 }
 #location_main_area  div.row div.card-tri-listing div.carlist-wrapper div.card:hover{
@@ -433,7 +435,15 @@ div#navbarNav.collapse.navbar-collapse{
      justify-content: center;
 }
 
-
+#location_main_area div.tabs-wrapper .completed{
+     background-color: var(--note-color) ;
+     box-sizing: border-box;
+}
+#location_main_area div.tabs-wrapper .completed::after{
+    content: " ☑️";
+    
+}
+#location_main_area div.cadre-details-voiture
 /*=====================================*/
 /*==========End Location PAGE ========*/
 /*===================================*/
