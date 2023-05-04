@@ -476,11 +476,32 @@ div#details div.tab-navigation-wrapper a.nav-link {
 }
 div#details div.tab-navigation-wrapper a.nav-link.next-tab{
       border-color: var(--primary-color2);
-      background-color: var(--primary-color);
+      background-color: var(--primary-color); 
       color: white;
 }
 div#details div.info-voitures{
     padding: 20px;
+}
+div#details div.info-voitures div.info-voitures-titles h2.title-modele-voiture{
+    margin-bottom: 2px;
+}
+div#details div.info-voitures  p{
+    margin-bottom:4px;
+}
+div#details div.info-voitures div.info-voitures-titles p.title-marque-voiture{
+    font-size: 15px;
+    font-weight: bold
+}
+div#details div.info-voitures div.info-voitures-titles p.description {
+    margin-bottom: 10px!important;
+}
+div#details div.info-voitures div.info-voitures-titles p.description span.description-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+div#details div.info-voitures div.info-voitures-titles p.description span.description-text{
+    font-size: 16px;
+    text-align: justify;
 }
 /*=====================================*/
 /*==========End Location PAGE ========*/
