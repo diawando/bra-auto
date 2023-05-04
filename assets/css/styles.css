@@ -439,17 +439,43 @@ div#navbarNav.collapse.navbar-collapse{
     content: " ☑️";
     
 }
-#location_main_area div.cadre-details-voiture{
+div#details div.cadre-details-voiture{
     background-color: var(--primary-color2);
     height: 400px;
-    
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    box-shadow: 2px 2px 120px var(--primary-color2);
 }
-#location_main_area div.cadre-details-voiture div.row div.img-voitures{
+div#details  div.cadre-details-voiture div.row div.img-voitures{
     padding: 0;
+    border-right: 1px solid var(--border-color);
+    padding-right: 5px;
 }
-#location_main_area div.cadre-details-voiture div.row div.img-voitures img{
+div#details  div.cadre-details-voiture div.row div.img-voitures img{
    width: 440px;
-   height: 400px;
+   height: 399px;
+   border-radius: 15px 0 0 15px;
+}
+div#details div.tab-navigation-wrapper{
+     margin: 30px auto!important;
+     width: 300px;
+     display: flex;
+     justify-content: space-between;
+}
+div#details div.tab-navigation-wrapper a.nav-link {
+        border: 2px solid var(--primary-color);
+        width: 100px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 0.5rem;
+        color:var(--primary-color3);
+        font-weight: bold;
+        font-size: 15px;
+}
+div#details div.tab-navigation-wrapper a.nav-link.next-tab{
+      border: none;
+      background-color: var(--primary-color);
+      color: white;
 }
 /*=====================================*/
 /*==========End Location PAGE ========*/
