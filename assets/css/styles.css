@@ -473,7 +473,7 @@ div#details div.tab-navigation-wrapper a.nav-link {
         font-size: 15px;
 }
 div#details div.tab-navigation-wrapper a.nav-link.next-tab{
-      border: none;
+      border-color: var(--primary-color2);
       background-color: var(--primary-color);
       color: white;
 }
