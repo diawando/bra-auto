@@ -446,10 +446,12 @@ div#details div.cadre-details-voiture{
     border: 1px solid var(--border-color);
     box-shadow: 2px 2px 120px var(--primary-color2);
 }
+
 div#details  div.cadre-details-voiture div.row div.img-voitures{
     padding: 0;
     border-right: 1px solid var(--border-color);
     padding-right: 5px;
+    height: 400px;
 }
 div#details  div.cadre-details-voiture div.row div.img-voitures img{
    width: 440px;
@@ -476,6 +478,9 @@ div#details div.tab-navigation-wrapper a.nav-link.next-tab{
       border-color: var(--primary-color2);
       background-color: var(--primary-color);
       color: white;
+}
+div#details div.info-voitures{
+    padding: 20px;
 }
 /*=====================================*/
 /*==========End Location PAGE ========*/
