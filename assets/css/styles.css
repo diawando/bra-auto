@@ -480,7 +480,7 @@ div#details div.tab-navigation-wrapper a.nav-link.next-tab{
       color: white;
 }
 div#details div.info-voitures{
-    padding: 20px;
+    padding: 20px 30px;
 }
 div#details div.info-voitures div.info-voitures-titles h2.title-modele-voiture{
     margin-bottom: 2px;
@@ -490,10 +490,12 @@ div#details div.info-voitures  p{
 }
 div#details div.info-voitures div.info-voitures-titles p.title-marque-voiture{
     font-size: 15px;
-    font-weight: bold
+    font-weight: bold;
+    margin-bottom:5px;
 }
 div#details div.info-voitures div.info-voitures-titles p.description {
-    margin-bottom: 10px!important;
+    margin-bottom: 5px!important;
+    
 }
 div#details div.info-voitures div.info-voitures-titles p.description span.description-title{
     font-size: 18px;
@@ -503,6 +505,30 @@ div#details div.info-voitures div.info-voitures-titles p.description span.descri
     font-size: 16px;
     text-align: justify;
 }
+div#details div.info-voitures div.row{
+    padding: 10px 0;
+
+}
+
+div#details div.info-voitures div.row div.info-details span.details-icones{
+    margin-right: 5px;
+}
+div#details div.info-voitures div.row div.info-details span.details-icones i{
+    font-size: 18px;
+    color: var(--primary-color);
+}
+div#details div.info-voitures div.row div.info-details p.addresse-title{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+div#details div.info-voitures div.row div.info-details p.addresse-location{
+    margin-left: 20px;
+    font-size: 15px;
+}
+div#details div.info-voitures div.row div.info-details p span.sm-details-title{
+    font-weight: bold;
+}
+
 /*=====================================*/
 /*==========End Location PAGE ========*/
 /*===================================*/
