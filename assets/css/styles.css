@@ -446,7 +446,10 @@ div#details div.cadre-details-voiture{
     border: 1px solid var(--border-color);
     box-shadow: 2px 2px 120px var(--primary-color2);
 }
-
+div#details div.cadre-details-voiture div.row{
+    height: 399px;
+    box-sizing: border-box;
+}
 div#details  div.cadre-details-voiture div.row div.img-voitures{
     padding: 0;
     border-right: 1px solid var(--border-color);
@@ -525,8 +528,47 @@ div#details div.info-voitures div.row div.info-details p.addresse-location{
     margin-left: 20px;
     font-size: 15px;
 }
-div#details div.info-voitures div.row div.info-details p span.sm-details-title{
+div#details div.info-voitures div.row div.info-details p span.sm-details-title,
+div#details div.info-voitures div.row div.info-details p.options-title{
     font-weight: bold;
+}
+div#details div.cadre-details-voiture div.row div.mont-total{
+    background-color: var(--primary-color3);
+    border-radius: 0 15px 15px 0 ;
+    padding:80px 15px;
+    height: 399px;
+}
+
+div#details div.cadre-details-voiture div.row div.mont-total p{
+    margin-bottom: 10px;
+    color: var(--primary-color2);
+}
+div#details div.cadre-details-voiture div.row div.mont-total p.titre-montant{
+    font-weight: bold;
+    font-size: 20px;
+    color: gray;
+  
+   
+}
+div#details div.cadre-details-voiture div.row div.mont-total p.cout-total-location,
+div#details div.cadre-details-voiture div.row div.mont-total p.titre-montant,
+div#details div.cadre-details-voiture div.row div.mont-total p.explication-cout,
+div#details div.cadre-details-voiture div.row div.mont-total p.explication-nbrejour
+{
+    text-align: center;
+}
+div#details div.cadre-details-voiture div.row div.mont-total p.cout-total-location{
+     font-size: 17px;
+}
+div#details div.cadre-details-voiture div.row div.mont-total p.cout-total-location span.devise-voiture,
+div#details div.cadre-details-voiture div.row div.mont-total p.explication-cout span.cout-journalier,
+div#details div.cadre-details-voiture div.row div.mont-total p.cout-total-location,
+div#details div.cadre-details-voiture div.row div.mont-total p.explication-nbrejour span.nombre-jour-location
+{
+    font-weight: bold;
+}
+div#details div.cadre-details-voiture div.row div.mont-total p.explication-cout{
+    position: relative;
 }
 
 /*=====================================*/
