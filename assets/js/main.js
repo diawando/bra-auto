@@ -25,7 +25,6 @@ jQuery('#datedefin').datetimepicker({
     filteredChildren.show();
     $('.num-filtered-children').text(numFilteredChildren);
   });
-
    // tab activation code
 
   // Initialize active tab index variable

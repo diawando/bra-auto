@@ -437,7 +437,6 @@ div#navbarNav.collapse.navbar-collapse{
 }
 #location_main_area div.tabs-wrapper .completed::after{
     content: " ☑️";
-    
 }
 div#details div.cadre-details-voiture{
     background-color: var(--primary-color2);
@@ -476,11 +475,16 @@ div#details div.tab-navigation-wrapper a.nav-link {
         color:var(--primary-color3);
         font-weight: bold;
         font-size: 15px;
+        
 }
 div#details div.tab-navigation-wrapper a.nav-link.next-tab{
       border-color: var(--primary-color2);
       background-color: var(--primary-color); 
       color: white;
+}
+div#details div.tab-navigation-wrapper a.nav-link:hover{
+    background-color: var(--primary-color3);
+    color: white;
 }
 div#details div.info-voitures{
     padding: 20px 30px;
