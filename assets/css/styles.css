@@ -460,13 +460,13 @@ div#details  div.cadre-details-voiture div.row div.img-voitures img{
    height: 399px;
    border-radius: 15px 0 0 15px;
 }
-div#details div.tab-navigation-wrapper{
+div.tab-navigation-wrapper{
      margin: 30px auto!important;
      width: 300px;
      display: flex;
      justify-content: space-between;
 }
-div#details div.tab-navigation-wrapper a.nav-link {
+div.tab-navigation-wrapper a.nav-link {
         border: 2px solid var(--primary-color);
         width: 100px;
         text-align: center;
@@ -477,12 +477,12 @@ div#details div.tab-navigation-wrapper a.nav-link {
         font-size: 15px;
         
 }
-div#details div.tab-navigation-wrapper a.nav-link.next-tab{
+div.tab-navigation-wrapper a.nav-link.next-tab{
       border-color: var(--primary-color2);
       background-color: var(--primary-color); 
       color: white;
 }
-div#details div.tab-navigation-wrapper a.nav-link:hover{
+div.tab-navigation-wrapper a.nav-link:hover{
     background-color: var(--primary-color3);
     color: white;
 }
