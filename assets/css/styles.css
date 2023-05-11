@@ -250,7 +250,7 @@ div#navbarNav.collapse.navbar-collapse{
 /*==========Start Location PAGE========*/
 /*===================================*/
 #location_main_area .container-fluid{
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 20px;
     background-color: var(--container-background);
 }
@@ -438,7 +438,8 @@ div#navbarNav.collapse.navbar-collapse{
 #location_main_area div.tabs-wrapper .completed::after{
     content: " ☑️";
 }
-div#details div.cadre-details-voiture{
+div#details div.cadre-details-voiture,
+div#conditions div.container{
     background-color: var(--primary-color2);
     height: 400px;
     border-radius: 15px;
@@ -574,7 +575,9 @@ div#details div.cadre-details-voiture div.row div.mont-total p.explication-nbrej
 div#details div.cadre-details-voiture div.row div.mont-total p.explication-cout{
     position: relative;
 }
-
+div#conditions div.container{
+    padding: 30px;
+}
 /*=====================================*/
 /*==========End Location PAGE ========*/
 /*===================================*/
