@@ -249,9 +249,9 @@ div#navbarNav.collapse.navbar-collapse{
 /*=====================================*/
 /*==========Start Location PAGE========*/
 /*===================================*/
-#location_main_area .container-fluid{
-    margin-top: 20px;
-    padding: 20px;
+#location_main_area .container-fluid,
+section#login-main-section{
+    padding: 40px 20px 20px 20px;
     background-color: var(--container-background);
 }
 #location_main_area .container-fluid .tabs-wrapper,
