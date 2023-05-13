@@ -581,3 +581,23 @@ div#conditions div.container{
 /*=====================================*/
 /*==========End Location PAGE ========*/
 /*===================================*/
+
+
+/*=====================================*/
+/*==========Start Login PAGE ========*/
+/*===================================*/
+section#login-main-section div.container-fluid{
+    margin: 40px auto;
+    height: 70vh;
+    width: 1400px;
+    padding: 30px;
+}
+
+section#login-main-section div.container-fluid div.login-wrapper{
+    border: 1px solid var(--border-color);
+    height: 50vh;
+    border-radius: 15px;
+}
+/*=====================================*/
+/*==========End Login PAGE ========*/
+/*===================================*/
