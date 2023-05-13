@@ -591,12 +591,30 @@ section#login-main-section div.container-fluid{
     height: 70vh;
     width: 1400px;
     padding: 30px;
+    top: 20px;
+    position: relative;
 }
 
 section#login-main-section div.container-fluid div.login-wrapper{
     border: 1px solid var(--border-color);
-    height: 50vh;
+    height: 60vh;
     border-radius: 15px;
+}
+section#login-main-section div.container-fluid div.login-wrapper div.row,
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-left-box{
+    margin:0;
+    padding:0;
+}
+
+section#login-main-section div.container-fluid div.login-wrapper div.row{
+    height: 100%!important;
+    width: 100%!important;
+}
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-left-box{
+     background-image: url(../images/img2.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-radius: 15px 0 0 15px;
 }
 /*=====================================*/
 /*==========End Login PAGE ========*/
