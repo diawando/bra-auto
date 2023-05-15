@@ -1,6 +1,7 @@
 :root{
     --primary-color: #4B0D17;
     --primary-color2: #ffffff;
+    --primary-color2-transparent: rgb(255, 255, 255,0.4);
     --primary-color3: #000000;
     --primary-color3-transparent: rgba(0, 0, 0, 0.6);
     --primary-color-transparent: rgba(74, 13, 23, 0.3);
@@ -601,12 +602,13 @@ section#login-main-section div.container-fluid div.login-wrapper{
     border-radius: 15px;
 }
 section#login-main-section div.container-fluid div.login-wrapper div.row,
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-left-box{
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-left-box,
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box{
     margin:0;
     padding:0;
 }
 
-section#login-main-section div.container-fluid div.login-wrapper div.row{
+section#login-main-section div.container-fluid div.login-wrapper > div.row{
     height: 100%!important;
     width: 100%!important;
 }
@@ -615,6 +617,36 @@ section#login-main-section div.container-fluid div.login-wrapper div.row div.log
      background-repeat: no-repeat;
      background-size: cover;
      border-radius: 15px 0 0 15px;
+     
+}
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box{
+    background-color: var(--primary-color);
+    border-radius: 0 15px 15px 0;
+    color: var(--primary-color2);
+}
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box div.logcard-title-wrapper{
+    height: 70px;
+    border-radius: 0 15px 0 0;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--title-background);
+}
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box div.logcard-title-wrapper h3{
+    font-size: 40px;
+    text-align: center;
+
+}
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form{
+    width: 550px;
+    height: 280px;
+    background-color: var(--primary-color3-transparent);
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 15px;
+}
+
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.form-floating{
+    color: var(--primary-color3);
 }
 /*=====================================*/
 /*==========End Login PAGE ========*/
