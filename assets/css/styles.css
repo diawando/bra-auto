@@ -12,9 +12,7 @@
 
     
 }
-body{
-    overflow-x: hidden;
-}
+
 
 
 /*start navigation*/
@@ -22,6 +20,7 @@ body{
     background-color: black;
     height: 80px;
     position: relative;
+
 }
 #header_area .main-menu .navbar-brand {
     padding: 0 1rem 0 1rem;
@@ -590,10 +589,6 @@ div#conditions div.container{
 /*=====================================*/
 /*==========Start Login PAGE ========*/
 /*===================================*/
-section#login-main-section {
-    height: 80vh;
-    width: 100%;
-}
 section#login-main-section div.container-fluid{
     margin: 10px auto;
     height: 70vh;
@@ -650,14 +645,65 @@ section#login-main-section div.container-fluid div.login-wrapper div.row div.log
     background-color: var(--primary-color3-transparent);
     padding: 25px;
     margin: 30px auto;
+    margin-bottom: 20px;
     border-radius: 15px;
 }
 
 section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.form-floating{
     color: var(--primary-color3);
 }
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 p a{
+    font-style: italic;
+  
+}
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 div.form-check{
+         display: flex;
+         justify-content: end;
+         
+}
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 div.form-check > label{
+    margin-left: 4px;
+    cursor: pointer;
+}
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 div.form-check input{
+    cursor: pointer;
+}
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form button[type="submit"] {
+     width: 400px;
+     display: block;
+     margin: 10px auto;
+     padding: 5px;
+     font-size: 20px;
+     background-color: var(--primary-color);
+     color: var(--primary-color2);
+     border-color: var(--primary-color2);
+     transition: background-color 1s ease-in, color 1s ease-in, border-color 1s ease-in;
+}
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box > p{
+    text-align: center;
+}
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box p a,
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 p a{
+    text-decoration: none;
+    color: var(--primary-color2);
+    transition: text-decoration 2s;
+}
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box p a{
+    font-weight: bold;
+}
 
-
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box p a:hover,
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 p a:hover{
+    text-decoration: underline;
+}
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form button[type="submit"]:hover{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background-color: var(--primary-color2);
+}
+section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 div.form-check input:hover{
+    border-color: var(--primary-color2);
+}
 /*=====================================*/
 /*==========End Login PAGE ========*/
 /*===================================*/
