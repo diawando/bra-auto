@@ -703,6 +703,7 @@ section#login-main-section div.container-fluid div.login-wrapper div.row div.log
 }
 section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 div.form-check input:hover{
     border-color: var(--primary-color2);
+    background-color: var();
 }
 /*=====================================*/
 /*==========End Login PAGE ========*/
