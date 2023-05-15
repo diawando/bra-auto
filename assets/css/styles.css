@@ -12,6 +12,9 @@
 
     
 }
+body{
+    overflow-x: hidden;
+}
 
 
 /*start navigation*/
@@ -587,11 +590,15 @@ div#conditions div.container{
 /*=====================================*/
 /*==========Start Login PAGE ========*/
 /*===================================*/
+section#login-main-section {
+    height: 80vh;
+    width: 100%;
+}
 section#login-main-section div.container-fluid{
-    margin: 40px auto;
+    margin: 10px auto;
     height: 70vh;
-    width: 1400px;
-    padding: 30px;
+    width: 90%;
+    padding: 30px 20px 20px 20px;
     top: 20px;
     position: relative;
 }
@@ -616,6 +623,7 @@ section#login-main-section div.container-fluid div.login-wrapper div.row div.log
      background-image: url(../images/img2.jpeg);
      background-repeat: no-repeat;
      background-size: cover;
+     background-position: center center;
      border-radius: 15px 0 0 15px;
      
 }
@@ -648,6 +656,8 @@ section#login-main-section div.container-fluid div.login-wrapper div.row div.log
 section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.form-floating{
     color: var(--primary-color3);
 }
+
+
 /*=====================================*/
 /*==========End Login PAGE ========*/
 /*===================================*/
