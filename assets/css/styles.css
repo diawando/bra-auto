@@ -253,7 +253,7 @@ div#navbarNav.collapse.navbar-collapse{
 /*==========Start Location PAGE========*/
 /*===================================*/
 #location_main_area .container-fluid,
-section#login-main-section{
+section#main-section{
     padding: 40px 20px 20px 20px;
     background-color: var(--container-background);
 }
@@ -589,7 +589,7 @@ div#conditions div.container{
 /*=====================================*/
 /*==========Start Login PAGE ========*/
 /*===================================*/
-section#login-main-section div.container-fluid{
+section#main-section div.container-fluid{
     margin: 10px auto;
     height: 70vh;
     width: 90%;
@@ -598,23 +598,23 @@ section#login-main-section div.container-fluid{
     position: relative;
 }
 
-section#login-main-section div.container-fluid div.login-wrapper{
+div.container-fluid > div.cadre-log-registration{
     border: 1px solid var(--border-color);
     height: 60vh;
     border-radius: 15px;
 }
-section#login-main-section div.container-fluid div.login-wrapper div.row,
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-left-box,
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box{
+section#main-section div.container-fluid div.login-wrapper div.row,
+section#main-section div.container-fluid div.login-wrapper div.row div.login-left-box,
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box{
     margin:0;
     padding:0;
 }
 
-section#login-main-section div.container-fluid div.login-wrapper > div.row{
+section#main-section div.container-fluid div.login-wrapper > div.row{
     height: 100%!important;
     width: 100%!important;
 }
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-left-box{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-left-box{
      background-image: url(../images/img2.jpeg);
      background-repeat: no-repeat;
      background-size: cover;
@@ -622,24 +622,24 @@ section#login-main-section div.container-fluid div.login-wrapper div.row div.log
      border-radius: 15px 0 0 15px;
      
 }
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box{
     background-color: var(--primary-color);
     border-radius: 0 15px 15px 0;
     color: var(--primary-color2);
 }
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box div.logcard-title-wrapper{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box div.title-wrapper{
     height: 70px;
     border-radius: 0 15px 0 0;
     margin-bottom: 10px;
     padding: 10px 0;
     border-bottom: 1px solid var(--title-background);
 }
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box div.logcard-title-wrapper h3{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box div.title-wrapper h3{
     font-size: 40px;
     text-align: center;
 
 }
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box form{
     width: 550px;
     height: 280px;
     background-color: var(--primary-color3-transparent);
@@ -649,26 +649,26 @@ section#login-main-section div.container-fluid div.login-wrapper div.row div.log
     border-radius: 15px;
 }
 
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.form-floating{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.form-floating{
     color: var(--primary-color3);
 }
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 p a{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 p a{
     font-style: italic;
   
 }
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 div.form-check{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 div.form-check{
          display: flex;
          justify-content: end;
          
 }
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 div.form-check > label{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 div.form-check > label{
     margin-left: 4px;
     cursor: pointer;
 }
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 div.form-check input{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 div.form-check input{
     cursor: pointer;
 }
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form button[type="submit"] {
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box form button[type="submit"] {
      width: 400px;
      display: block;
      margin: 10px auto;
@@ -679,29 +679,29 @@ section#login-main-section div.container-fluid div.login-wrapper div.row div.log
      border-color: var(--primary-color2);
      transition: background-color 1s ease-in, color 1s ease-in, border-color 1s ease-in;
 }
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box > p{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box > p{
     text-align: center;
 }
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box p a,
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 p a{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box p a,
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 p a{
     text-decoration: none;
     color: var(--primary-color2);
     transition: text-decoration 2s;
 }
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box p a{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box p a{
     font-weight: bold;
 }
 
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box p a:hover,
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 p a:hover{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box p a:hover,
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 p a:hover{
     text-decoration: underline;
 }
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form button[type="submit"]:hover{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box form button[type="submit"]:hover{
     color: var(--primary-color);
     border-color: var(--primary-color);
     background-color: var(--primary-color2);
 }
-section#login-main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 div.form-check input:hover{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.row div.col-md-6 div.form-check input:hover{
     border-color: var(--primary-color2);
     background-color: var();
 }
