@@ -586,9 +586,9 @@ div#conditions div.container{
 /*===================================*/
 
 
-/*=====================================*/
-/*==========Start Login PAGE ========*/
-/*===================================*/
+/*===================================================*/
+/*==========Start Login & Registration PAGE ========*/
+/*=================================================*/
 section#main-section div.container-fluid{
     margin: 10px auto;
     height: 70vh;
@@ -705,6 +705,7 @@ section#main-section div.container-fluid div.login-wrapper div.row div.login-rig
     border-color: var(--primary-color2);
     background-color: var();
 }
-/*=====================================*/
-/*==========End Login PAGE ========*/
-/*===================================*/
+/*=================================================*/
+/*==========End Login & Registration PAGE ========*/
+/*================================================*/
+
