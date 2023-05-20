@@ -591,42 +591,49 @@ div#conditions div.container{
 /*=================================================*/
 section#main-section div.container-fluid{
     margin: 10px auto;
-    height: 70vh;
     width: 90%;
     padding: 30px 20px 20px 20px;
     top: 20px;
     position: relative;
 }
 
-div.container-fluid > div.cadre-log-registration{
+div.container-fluid > div.login-wrapper.cadre-log-registration{
     border: 1px solid var(--border-color);
-    height: 60vh;
     border-radius: 15px;
 }
 section#main-section div.container-fluid div.login-wrapper div.row,
 section#main-section div.container-fluid div.login-wrapper div.row div.login-left-box,
-section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box,
+{
     margin:0;
     padding:0;
 }
 
-section#main-section div.container-fluid div.login-wrapper > div.row{
-    height: 100%!important;
-    width: 100%!important;
-}
 section#main-section div.container-fluid div.login-wrapper div.row div.login-left-box{
      background-image: url(../images/img2.jpeg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center center;
-     border-radius: 15px 0 0 15px;
-     
+    
+}
+section#main-section div.container-fluid div.login-wrapper div.row div.registration-left-box{
+    background-image: url(../images/img11.jpeg);
+}
+section#main-section div.container-fluid div.login-wrapper div.row div.login-left-box{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 15px 0 0 15px;
 }
 section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box{
     background-color: var(--primary-color);
-    border-radius: 0 15px 15px 0;
     color: var(--primary-color2);
 }
+section#main-section div.container-fluid div.login-wrapper div.registration-right-box{
+    background-color: var(--primary-color3)!important;
+}
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box,
+section#main-section div.container-fluid div.login-wrapper div.registration-right-box{
+    border-radius: 0 15px 15px 0;
+}
+
 section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box div.title-wrapper{
     height: 70px;
     border-radius: 0 15px 0 0;
@@ -639,16 +646,25 @@ section#main-section div.container-fluid div.login-wrapper div.row div.login-rig
     text-align: center;
 
 }
-section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box form{
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box form,
+section#main-section div.container-fluid div.login-wrapper div.registration-right-box form{
     width: 550px;
-    height: 280px;
+    border-radius: 15px;
+}
+section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box form{
+   
     background-color: var(--primary-color3-transparent);
     padding: 25px;
     margin: 30px auto;
     margin-bottom: 20px;
-    border-radius: 15px;
+    
 }
-
+section#main-section div.container-fluid div.login-wrapper div.registration-right-box form{
+    background-color: var(--primary-color2-transparent)!important;
+    padding: 10px 25px;
+    margin: 30px auto;
+    margin-bottom: 10px!important;
+}
 section#main-section div.container-fluid div.login-wrapper div.row div.login-right-box form div.form-floating{
     color: var(--primary-color3);
 }
@@ -672,6 +688,7 @@ section#main-section div.container-fluid div.login-wrapper div.row div.login-rig
      width: 400px;
      display: block;
      margin: 10px auto;
+     margin-bottom: 5px!important;
      padding: 5px;
      font-size: 20px;
      background-color: var(--primary-color);
@@ -705,6 +722,8 @@ section#main-section div.container-fluid div.login-wrapper div.row div.login-rig
     border-color: var(--primary-color2);
     background-color: var();
 }
+
+
 /*=================================================*/
 /*==========End Login & Registration PAGE ========*/
 /*================================================*/

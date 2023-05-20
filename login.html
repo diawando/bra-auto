@@ -74,20 +74,30 @@
      <div class="container-fluid">
               <div class="login-wrapper cadre-log-registration">
                    <div class="row">
-                         <div class="col-md-6 login-left-box registration-left-box">    
+                         <div class="col-md-6 login-left-box">    
                          </div>
-                         <div class="col-md-6 login-right-box registration-right-box">
+                         <div class="col-md-6 login-right-box">
                             <div class="title-wrapper">
                                 <h3>Se connecter</h3>
                             </div>
                              <form>
                                  <div class="form-floating mb-3">
                                      <input type="email" class="form-control" id="User-Mail" placeholder="name@example.com">
-                                     <label for="User-Mail">Votre Email</label>
+                                     <label for="User-Mail">
+                                      <span class="form-icone">
+                                        <i class="fa-solid fa-envelope"></i>
+                                      </span>
+                                      Votre Email
+                                    </label>
                                    </div>
                                    <div class="form-floating mb-2">
                                      <input type="password" class="form-control" id="User-Password" placeholder="mot de passe">
-                                     <label for="User-Password">Mot de passe</label>
+                                     <label for="User-Password">
+                                      <span class="form-icone">
+                                        <i class="fa-solid fa-lock"></i>
+                                    </span>
+                                      Mot de passe
+                                    </label>
                                    </div>
                                    <div class="row">
                                          <div class="col-md-6">
@@ -168,20 +178,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>
-    <script>
-                      // Récupérer la case à cocher et l'élément à masquer
-              const checkbox = document.getElementById('memezone');
-              const destination = document.getElementById('destination');
-                  
-              // Ajouter un écouteur d'événement pour la case à cocher
-              checkbox.addEventListener('change', () => {
-                  // Si la case est cochée, masquer l'élément de destination
-                  if (checkbox.checked) {
-                    destination.style.display = 'none';
-                  } else {
-                    destination.style.display = 'flex';
-                  }
-                });
-    </script>
   </body>
 </html>

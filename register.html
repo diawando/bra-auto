@@ -12,8 +12,11 @@
 
     <!-- FONT AWESOME CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- INTERNATIONAL INPUT FIELD -->
+    <link rel=”stylesheet” href=”build/css/intlTelInput.css”>
     <!-- main styles sheet-->
     <link href="assets/css/styles.css" rel="stylesheet">
+
   </head>
   <body>
   <!--========================= Start Header Area =========================-->
@@ -81,28 +84,74 @@
                                 <h3>Creer un nouveau Compte</h3>
                             </div>
                              <form>
-                                 <div class="form-floating mb-3">
+                                   <div class="form-floating mb-3">
+                                     <input type="text" class="form-control" id="Username" placeholder="Nom et Prenom">
+                                     <label for="Username">
+                                      <span class="form-icone">
+                                        <i class="fa-solid fa-user"></i>
+                                      </span>
+                                      Prénom et Nom
+                                     </label>
+                                   </div>
+                                   <div class="form-floating mb-3">
                                      <input type="email" class="form-control" id="User-Mail" placeholder="name@example.com">
-                                     <label for="User-Mail">Votre Email</label>
+                                     <label for="User-Mail">
+                                      <span class="form-icone">
+                                        <i class="fa-solid fa-envelope"></i>
+                                      </span>
+                                      Votre Email
+                                     </label>
                                    </div>
-                                   <div class="form-floating mb-2">
+                                   <div class="form-floating mb-3">
+                                    <select class="form-select" id="User-gender" aria-label="User gender">
+                                      <option selected>Cliquez pour indiquer votre genre</option>
+                                      <option value="H">Homme</option>
+                                      <option value="F">Femme</option>
+                                    </select>
+                                    <label for="User-gender">
+                                      <span class="form-icone">
+                                        <i class="fa-solid fa-person-half-dress"></i>
+                                      </span>
+                                      Votre Genre
+                                    </label>
+                                  </div>
+                                   <div class="form-floating mb-3">
+                                     <input type="date" class="form-control" id="User-birthdate" placeholder="date de naissance">
+                                     <label for="User-birthdate">
+                                      <span class="form-icone">
+                                        <i class="fa-solid fa-calendar"></i>
+                                      </span>
+                                      Votre date de naissance
+                                    </label>
+                                   </div>
+                                   <div class="form-floating mb-3">
+                                    <input type="tel" class="form-control" id="telephone" placeholder="numéro de telephone">
+                                    <label for="telephone">
+                                      Votre numero de telephone
+                                    </label>
+                                  </div>
+                                   <div class="form-floating mb-3">
                                      <input type="password" class="form-control" id="User-Password" placeholder="mot de passe">
-                                     <label for="User-Password">Mot de passe</label>
+                                     <label for="User-Password">
+                                      <span class="form-icone">
+                                          <i class="fa-solid fa-lock"></i>
+                                      </span>
+                                      Mot de passe
+                                    </label>
                                    </div>
-                                   <div class="row">
-                                         <div class="col-md-6">
-                                              <p><a href="#">mot de passe oublié?</a></p>
-                                         </div>
-                                         <div class="col-md-6">
-                                             <div class="mb-3 form-check">
-                                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                 <label class="form-check-label" for="exampleCheck1">se souvenir de moi</label>
-                                               </div>
-                                         </div>
+                                   <div class="form-floating mb-3">
+                                     <input type="password" class="form-control" id="User-confirmPassword" placeholder="Confirmez votre mot de passe">
+                                     <label for="User-confirmPassword">
+                                      <span class="form-icone">
+                                        <i class="fa-solid fa-lock"></i>
+                                      </span>
+                                      Confirmez votre mot de passe
+                                    </label>
                                    </div>
+                                 
                                    <button type="submit" class="btn">connexion</button>
                              </form>
-                             <p> Vous n'avez pas compte?  <a href="register.html">Créer un nouveau compte</a></p>
+                             <p> Vous avez dejà un compte?  <a href="login.html">Connecter vous à votre compte</a></p>
                          </div>
                    </div>
               </div>
@@ -164,23 +213,34 @@
     <!-- JQUERY CDN-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/jquery.datetimepicker.full.min.js"></script>
+    <script src=”build/js/intlTelInput.js”></script>
     <!-- BOOSTRAP SCRIPT-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>
     <script>
-                      // Récupérer la case à cocher et l'élément à masquer
-              const checkbox = document.getElementById('memezone');
-              const destination = document.getElementById('destination');
-                  
-              // Ajouter un écouteur d'événement pour la case à cocher
-              checkbox.addEventListener('change', () => {
-                  // Si la case est cochée, masquer l'élément de destination
-                  if (checkbox.checked) {
-                    destination.style.display = 'none';
-                  } else {
-                    destination.style.display = 'flex';
-                  }
+      var input = document.querySelector("#telephone");
+
+          window.intlTelInput(input,({
+
+            
+
+              }));
+
+              $(document).ready(function() {
+
+                $(".iti__flag-container").click(function() {
+                
+                var countryCode = $(".iti__selected-flag").attr("title");
+                
+                var countryCode = countryCode.replace(/[⁰-9]/g,"")
+                
+                $("#phone").val("");
+                
+                $("#phone").val("+"+countryCode+" "+ $("#phone").val());
+                
+                });
+                
                 });
     </script>
   </body>
